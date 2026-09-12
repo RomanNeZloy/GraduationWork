@@ -1,7 +1,3 @@
-"""
-disk.py — Сбор метрик дисков: разделы, использование, I/O.
-"""
-
 import psutil
 from dataclasses import dataclass, asdict
 from typing import List, Dict, Any

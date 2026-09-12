@@ -40,10 +40,9 @@ class GPUMonitor:
     # ── Определение бэкенда ──────────────────
     def _detect_backend(self) -> str:
         """
-        Последовательно пробуем библиотеки от «лучшей» к «худшей».
+        Последовательно пробуем библиотеки.
         Первый рабочий вариант побеждает.
         """
-
         # 1) NVIDIA через GPUtil
         try:
             import GPUtil
@@ -52,7 +51,7 @@ class GPUMonitor:
         except Exception as e:
             logger.debug(f"GPUtil unavailable: {e}")
 
-        # 2) NVIDIA через pynvml (официальный NVML)
+        # 2) NVIDIA через pynvml
         try:
             import pynvml
             pynvml.nvmlInit()
@@ -61,7 +60,7 @@ class GPUMonitor:
         except Exception as e:
             logger.debug(f"pynvml unavailable: {e}")
 
-        # 3) AMD через amdsmi (официальный ROCm SMI)
+        # 3) AMD через amdsmi
         try:
             import amdsmi
             amdsmi.amdsmi_init()
@@ -74,7 +73,7 @@ class GPUMonitor:
         if self._cmd_exists("rocm-smi"):
             return "amd_rocm_smi"
 
-        # 5) NVIDIA через CLI-утилиту nvidia-smi (последний шанс для NVIDIA)
+        # 5) NVIDIA через CLI-утилиту nvidia-smi
         if self._cmd_exists("nvidia-smi"):
             return "nvidia_smi"
 
@@ -87,7 +86,6 @@ class GPUMonitor:
     def _cmd_exists(cmd: str) -> bool:
         return shutil.which(cmd) is not None
 
-    # ── Публичный метод ──────────────────────
     def get_gpus(self) -> List[GPUInfo]:
         """Возвращает список всех обнаруженных GPU."""
         dispatch = {
@@ -106,7 +104,7 @@ class GPUMonitor:
             logger.error(f"GPU collection failed ({self._backend}): {e}")
             return []
 
-    # ── NVIDIA: GPUtil ───────────────────────
+    #NVIDIA: GPUtil
     def _via_gputil(self) -> List[GPUInfo]:
         import GPUtil
         result = []
@@ -123,7 +121,7 @@ class GPUMonitor:
             ))
         return result
 
-    # ── NVIDIA: pynvml ───────────────────────
+    #NVIDIA: pynvml
     def _via_pynvml(self) -> List[GPUInfo]:
         import pynvml
         result = []
@@ -151,7 +149,7 @@ class GPUMonitor:
             ))
         return result
 
-    # ── AMD: amdsmi ──────────────────────────
+    #AMD: amdsmi
     def _via_amdsmi(self) -> List[GPUInfo]:
         import amdsmi
         result = []
@@ -176,7 +174,7 @@ class GPUMonitor:
             ))
         return result
 
-    # ── AMD: rocm-smi (CLI) ──────────────────
+    #AMD: rocm-smi
     def _via_rocm_smi(self) -> List[GPUInfo]:
         """Парсим JSON-вывод rocm-smi."""
         import json
@@ -200,7 +198,7 @@ class GPUMonitor:
             ))
         return result
 
-    # ── NVIDIA: nvidia-smi (CLI) ─────────────
+    #NVIDIA: nvidia-smi
     def _via_nvidia_smi(self) -> List[GPUInfo]:
         """Парсим CSV-вывод nvidia-smi."""
         raw = subprocess.check_output([
@@ -227,7 +225,7 @@ class GPUMonitor:
             ))
         return result
 
-    # ── Fallback: WMI (Windows) ──────────────
+    #Fallback: WMI (Windows)
     def _via_wmi(self) -> List[GPUInfo]:
         """Базовая информация через WMI. Нет нагрузки в реальном времени."""
         import wmi
@@ -252,7 +250,7 @@ class GPUMonitor:
             ))
         return result
 
-    # ── Fallback: lspci (Linux) ──────────────
+    #Fallback: lspci (Linux)
     def _via_lspci(self) -> List[GPUInfo]:
         """Базовая информация через lspci. Только название."""
         raw = subprocess.check_output(

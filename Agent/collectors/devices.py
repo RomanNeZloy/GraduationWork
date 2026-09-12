@@ -1,7 +1,3 @@
-"""
-devices.py — Сбор информации о подключённых устройствах: USB, принтеры, мониторы.
-"""
-
 import platform
 from dataclasses import dataclass, asdict
 from typing import List, Dict, Any

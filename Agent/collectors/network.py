@@ -1,7 +1,3 @@
-"""
-network.py — Сбор метрик сети: интерфейсы, трафик, соединения.
-"""
-
 import psutil
 from dataclasses import dataclass, asdict
 from typing import List, Dict, Any

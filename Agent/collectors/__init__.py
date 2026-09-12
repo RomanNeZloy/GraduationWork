@@ -1,7 +1,3 @@
-"""
-collectors — Модули для сбора метрик системы.
-"""
-
 from .cpu import CPUCollector
 from .memory import MemoryCollector
 from .disk import DiskCollector

@@ -1,7 +1,3 @@
-"""
-cpu.py — Сбор метрик процессора: загрузка, частоты, температура.
-"""
-
 import platform
 import psutil
 from dataclasses import dataclass, asdict

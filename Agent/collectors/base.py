@@ -1,7 +1,3 @@
-"""
-base.py — Базовый класс для всех коллекторов метрик.
-"""
-
 import logging
 from abc import ABC, abstractmethod
 from typing import Any, Dict
@@ -23,7 +19,6 @@ class BaseCollector(ABC):
 
     def safe_get(self) -> Dict[str, Any]:
         """
-        Безопасная обёртка над get() с обработкой ошибок.
         Возвращает пустой словарь в случае исключения.
         """
         try:

@@ -41,7 +41,7 @@ class SystemCollector(BaseCollector):
             processor=platform.processor(),
             boot_time=psutil.boot_time(),
             uptime_seconds=time.time() - psutil.boot_time(),
-            users=users,
+            users=users
         )
 
         self.logger.info(f"System: {info.hostname} ({info.os_name} {info.os_release})")
