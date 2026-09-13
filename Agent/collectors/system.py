@@ -16,7 +16,6 @@ class SystemInfo:
     os_version: str
     architecture: str
     processor: str
-    python_version: str
     boot_time: float
     uptime_seconds: float
     users: List[str]

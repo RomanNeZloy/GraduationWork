@@ -14,6 +14,7 @@ from collectors import (
 # Настройка логирования
 logging.basicConfig(
     level=logging.CRITICAL,
+    #level=logging.DEBUG,
     format='%(asctime)s [%(name)s] %(levelname)s: %(message)s',
 
     handlers=[
@@ -46,6 +47,7 @@ def collect_all_metrics() -> dict:
     metrics['gpu'] = [gpu.to_dict() for gpu in gpu_monitor.get_gpus()]
 
     return metrics
+
 def main():
     logger.info("Agent started")
     #Для зацикливания работы программы.
@@ -54,7 +56,7 @@ def main():
         metrics = collect_all_metrics()
 
         #print(json.dumps(metrics, indent=2, ensure_ascii=False))
-        print(json.dumps(metrics["cpu"], indent=2, ensure_ascii=False))
+        print(json.dumps(metrics, indent=2, ensure_ascii=False))
 
         #time.sleep(interval)
     except KeyboardInterrupt:
