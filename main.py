@@ -1,4 +1,3 @@
-import time
 import json
 import logging
 from collectors import (

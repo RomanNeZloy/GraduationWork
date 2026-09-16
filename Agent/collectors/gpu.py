@@ -1,32 +1,41 @@
-
 import logging
 import platform
 import subprocess
 import shutil
-from dataclasses import dataclass
-from typing import List, Optional
+from .base import BaseCollector
+from dataclasses import dataclass, asdict
+from typing import List, Optional, Dict, Any
+
 
 logger = logging.getLogger(__name__)
 
 
-# ─────────────────────────────────────────────
-#  Структура данных (единая для всех вендоров)
-# ─────────────────────────────────────────────
 @dataclass
 class GPUInfo:
     id: int
     name: str
-    vendor: str                              # "NVIDIA", "AMD", "Intel", "Unknown"
-    load_percent: Optional[float] = None     # загрузка GPU, %
-    memory_used_mb: Optional[int] = None     # использовано VRAM, МБ
-    memory_total_mb: Optional[int] = None    # всего VRAM, МБ
-    memory_percent: Optional[float] = None   # загрузка VRAM, %
-    temperature_c: Optional[int] = None      # температура, °C
-    driver_version: Optional[str] = None     # версия драйвера
+    vendor: str  # "NVIDIA", "AMD", "Intel", "Unknown"
+    load_percent: Optional[float] = None  # загрузка GPU, %
+    memory_used_mb: Optional[int] = None  # использовано VRAM, МБ
+    memory_total_mb: Optional[int] = None  # всего VRAM, МБ
+    memory_percent: Optional[float] = None  # загрузка VRAM, %
 
-    def to_dict(self) -> dict:
-        """Сериализация для отправки на сервер."""
-        return {k: v for k, v in self.__dict__.items() if v is not None}
+    # Базовые метрики (есть всегда)
+    temperature_c: Optional[int] = None  # температура ядра, °C
+
+    # Расширенные метрики (только через LHM)
+    temperature_hotspot_c: Optional[int] = None  # температура hotspot, °C
+    temperature_memory_c: Optional[int] = None  # температура памяти, °C
+    clock_mhz: Optional[float] = None  # текущая частота, МГц
+    fan_speed_percent: Optional[float] = None  # скорость вентилятора, %
+    power_w: Optional[float] = None  # энергопотребление, Вт
+    voltage_v: Optional[float] = None  # напряжение, В
+
+    driver_version: Optional[str] = None  # версия драйвера
+
+    def to_dict(self) -> Dict[str, Any]:
+        """Сериализация для отправки на сервер (только непустые поля)."""
+        return {k: v for k, v in asdict(self).items() if v is not None}
 
 
 # ─────────────────────────────────────────────
@@ -35,14 +44,24 @@ class GPUInfo:
 class GPUMonitor:
     def __init__(self):
         self._backend = self._detect_backend()
+        self._lhm = None
+        self._init_lhm()
         logger.info(f"GPU backend selected: {self._backend}")
+
+    def _init_lhm(self):
+        """Инициализирует LHM на Windows для расширенных метрик."""
+        if platform.system() == "Windows":
+            try:
+                from .lhm_monitor import LHMMonitor
+                self._lhm = LHMMonitor()
+                logger.info("LibreHardwareMonitorLib initialized for GPU")
+            except Exception as e:
+                logger.debug(f"LHM not available for GPU: {e}")
 
     # ── Определение бэкенда ──────────────────
     def _detect_backend(self) -> str:
-        """
-        Последовательно пробуем библиотеки.
-        Первый рабочий вариант побеждает.
-        """
+        """Последовательно пробуем библиотеки от «лучшей» к «худшей»."""
+
         # 1) NVIDIA через GPUtil
         try:
             import GPUtil
@@ -69,11 +88,11 @@ class GPUMonitor:
         except Exception as e:
             logger.debug(f"amdsmi unavailable: {e}")
 
-        # 4) AMD через CLI-утилиту rocm-smi
+        # 4) AMD через CLI rocm-smi
         if self._cmd_exists("rocm-smi"):
             return "amd_rocm_smi"
 
-        # 5) NVIDIA через CLI-утилиту nvidia-smi
+        # 5) NVIDIA через CLI nvidia-smi
         if self._cmd_exists("nvidia-smi"):
             return "nvidia_smi"
 
@@ -86,25 +105,85 @@ class GPUMonitor:
     def _cmd_exists(cmd: str) -> bool:
         return shutil.which(cmd) is not None
 
+    # ── Публичный метод ──────────────────────
     def get_gpus(self) -> List[GPUInfo]:
-        """Возвращает список всех обнаруженных GPU."""
+        """Возвращает список всех обнаруженных GPU с расширенными метриками."""
         dispatch = {
-            "nvidia_gputil":   self._via_gputil,
-            "nvidia_pynvml":   self._via_pynvml,
-            "amd_amdsmi":      self._via_amdsmi,
-            "amd_rocm_smi":    self._via_rocm_smi,
-            "nvidia_smi":      self._via_nvidia_smi,
-            "wmi_fallback":    self._via_wmi,
-            "linux_fallback":  self._via_lspci,
+            "nvidia_gputil": self._via_gputil,
+            "nvidia_pynvml": self._via_pynvml,
+            "amd_amdsmi": self._via_amdsmi,
+            "amd_rocm_smi": self._via_rocm_smi,
+            "nvidia_smi": self._via_nvidia_smi,
+            "wmi_fallback": self._via_wmi,
+            "linux_fallback": self._via_lspci,
         }
         handler = dispatch.get(self._backend, self._via_wmi)
+
         try:
-            return handler()
+            gpus = handler()
+
+            # Обогащаем данные из LHM, если доступен
+            if self._lhm:
+                gpus = self._enrich_with_lhm(gpus)
+
+            return gpus
         except Exception as e:
             logger.error(f"GPU collection failed ({self._backend}): {e}")
             return []
 
-    #NVIDIA: GPUtil
+    # ── Обогащение данными из LHM ────────────
+    def _enrich_with_lhm(self, gpus: List[GPUInfo]) -> List[GPUInfo]:
+        """Добавляет расширенные метрики из LibreHardwareMonitorLib."""
+        try:
+            # Получаем все GPU-сенсоры из LHM
+            all_gpu_sensors = self._lhm.get_all_sensors()
+            gpu_sensors = [s for s in all_gpu_sensors if "Gpu" in s["hardware_type"]]
+
+            for gpu in gpus:
+                # Ищем сенсоры для этой GPU по имени
+                gpu_name_lower = gpu.name.lower()
+
+                for sensor in gpu_sensors:
+                    hw_name_lower = sensor["hardware"].lower()
+
+                    # Проверяем, относится ли сенсор к этой GPU
+                    if gpu_name_lower in hw_name_lower or hw_name_lower in gpu_name_lower:
+                        sensor_type = sensor["sensor_type"]
+                        sensor_name = sensor["sensor_name"].lower()
+                        value = sensor["value"]
+
+                        # Температура hotspot
+                        if sensor_type == "Temperature" and "hot spot" in sensor_name:
+                            gpu.temperature_hotspot_c = int(value)
+
+                        # Температура памяти
+                        elif sensor_type == "Temperature" and "memory" in sensor_name:
+                            gpu.temperature_memory_c = int(value)
+
+                        # Частота
+                        elif sensor_type == "Clock" and "core" in sensor_name:
+                            gpu.clock_mhz = value
+
+                        # Скорость вентилятора
+                        elif sensor_type == "Fan":
+                            gpu.fan_speed_percent = value
+
+                        # Мощность
+                        elif sensor_type == "Power":
+                            gpu.power_w = value
+
+                        # Напряжение
+                        elif sensor_type == "Voltage":
+                            gpu.voltage_v = value
+
+            logger.debug(f"Enriched {len(gpus)} GPUs with LHM data")
+            return gpus
+
+        except Exception as e:
+            logger.warning(f"Failed to enrich GPU data with LHM: {e}")
+            return gpus
+
+    # ── NVIDIA: GPUtil ───────────────────────
     def _via_gputil(self) -> List[GPUInfo]:
         import GPUtil
         result = []
@@ -121,7 +200,7 @@ class GPUMonitor:
             ))
         return result
 
-    #NVIDIA: pynvml
+    # ── NVIDIA: pynvml ───────────────────────
     def _via_pynvml(self) -> List[GPUInfo]:
         import pynvml
         result = []
@@ -149,7 +228,7 @@ class GPUMonitor:
             ))
         return result
 
-    #AMD: amdsmi
+    # ── AMD: amdsmi ──────────────────────────
     def _via_amdsmi(self) -> List[GPUInfo]:
         import amdsmi
         result = []
@@ -161,7 +240,7 @@ class GPUMonitor:
             temp = amdsmi.amdsmi_get_temp_metric(
                 h, amdsmi.AmdSmiTemperatureType.JUNCTION,
                 amdsmi.AmdSmiTemperatureMetric.CURRENT
-            ) // 1000  # миллиградусы → градусы
+            ) // 1000
             result.append(GPUInfo(
                 id=i,
                 name=name,
@@ -174,9 +253,8 @@ class GPUMonitor:
             ))
         return result
 
-    #AMD: rocm-smi
+    # ── AMD: rocm-smi (CLI) ──────────────────
     def _via_rocm_smi(self) -> List[GPUInfo]:
-        """Парсим JSON-вывод rocm-smi."""
         import json
         raw = subprocess.check_output(
             ["rocm-smi", "--showuse", "--showmemuse", "--showtemp", "--json"],
@@ -198,9 +276,8 @@ class GPUMonitor:
             ))
         return result
 
-    #NVIDIA: nvidia-smi
+    # ── NVIDIA: nvidia-smi (CLI) ─────────────
     def _via_nvidia_smi(self) -> List[GPUInfo]:
-        """Парсим CSV-вывод nvidia-smi."""
         raw = subprocess.check_output([
             "nvidia-smi",
             "--query-gpu=index,name,utilization.gpu,memory.used,memory.total,"
@@ -225,9 +302,8 @@ class GPUMonitor:
             ))
         return result
 
-    #Fallback: WMI (Windows)
+    # ── Fallback: WMI (Windows) ──────────────
     def _via_wmi(self) -> List[GPUInfo]:
-        """Базовая информация через WMI. Нет нагрузки в реальном времени."""
         import wmi
         c = wmi.WMI()
         result = []
@@ -250,9 +326,8 @@ class GPUMonitor:
             ))
         return result
 
-    #Fallback: lspci (Linux)
+    # ── Fallback: lspci (Linux) ──────────────
     def _via_lspci(self) -> List[GPUInfo]:
-        """Базовая информация через lspci. Только название."""
         raw = subprocess.check_output(
             ["lspci"], text=True, stderr=subprocess.DEVNULL
         )
@@ -272,3 +347,7 @@ class GPUMonitor:
                 result.append(GPUInfo(id=gpu_id, name=name, vendor=vendor))
                 gpu_id += 1
         return result
+    def __del__(self):
+        """Освобождает ресурсы LHM."""
+        if self._lhm:
+            self._lhm.close()

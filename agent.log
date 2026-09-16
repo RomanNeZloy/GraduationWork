@@ -1,0 +1,1219 @@
+
+2026-09-16 19:05:53,905 [Agent] INFO: Agent started
+2026-09-16 19:05:53,989 [CPUCollector] WARNING: LHM not available: No module named 'collectors.lhm_monitor'
+2026-09-16 19:05:53,989 [DiskCollector] DEBUG: LHM not available for disks: No module named 'collectors.lhm_monitor'
+2026-09-16 19:05:53,992 [collectors.gpu] DEBUG: GPUtil unavailable: No module named 'distutils'
+2026-09-16 19:05:55,231 [collectors.gpu] DEBUG: LHM not available for GPU: No module named 'collectors.lhm_monitor'
+2026-09-16 19:05:55,231 [collectors.gpu] INFO: GPU backend selected: nvidia_pynvml
+2026-09-16 19:05:55,231 [Agent] DEBUG: Collecting system...
+2026-09-16 19:05:55,231 [SystemCollector] DEBUG: Collecting system info
+2026-09-16 19:05:55,247 [SystemCollector] INFO: System: DESKTOP-1TTJ7HH (Windows 11)
+2026-09-16 19:05:55,247 [Agent] DEBUG: Collecting cpu...
+2026-09-16 19:05:55,247 [CPUCollector] DEBUG: Collecting CPU metrics
+2026-09-16 19:05:55,448 [CPUCollector] INFO: CPU: 13.7%, Temp: None, Power: NoneW
+2026-09-16 19:05:55,448 [Agent] DEBUG: Collecting memory...
+2026-09-16 19:05:55,448 [MemoryCollector] DEBUG: Collecting memory metrics
+2026-09-16 19:05:55,695 [MemoryCollector] INFO: RAM usage: 61.3%, Swap: 10.8%
+2026-09-16 19:05:55,695 [Agent] DEBUG: Collecting disk...
+2026-09-16 19:05:55,695 [DiskCollector] DEBUG: Collecting disk metrics
+2026-09-16 19:05:55,695 [DiskCollector] INFO: Collected 1 disk partitions
+2026-09-16 19:05:55,695 [Agent] DEBUG: Collecting network...
+2026-09-16 19:05:55,695 [NetworkCollector] DEBUG: Collecting network metrics
+2026-09-16 19:05:55,776 [NetworkCollector] INFO: Network: 2187513380 sent, 38586104777 recv
+2026-09-16 19:05:55,776 [Agent] DEBUG: Collecting devices...
+2026-09-16 19:05:55,776 [DevicesCollector] DEBUG: Collecting devices info
+2026-09-16 19:05:56,010 [DevicesCollector] INFO: Devices: 3 USB, 1 printers
+2026-09-16 19:05:56,695 [Agent] INFO: End program
+2026-09-16 19:06:01,612 [Agent] INFO: Agent started
+2026-09-16 19:06:01,614 [CPUCollector] WARNING: LHM not available: No module named 'collectors.lhm_monitor'
+2026-09-16 19:06:01,614 [DiskCollector] DEBUG: LHM not available for disks: No module named 'collectors.lhm_monitor'
+2026-09-16 19:06:01,617 [collectors.gpu] DEBUG: GPUtil unavailable: No module named 'distutils'
+2026-09-16 19:06:02,455 [collectors.gpu] DEBUG: LHM not available for GPU: No module named 'collectors.lhm_monitor'
+2026-09-16 19:06:02,455 [collectors.gpu] INFO: GPU backend selected: nvidia_pynvml
+2026-09-16 19:06:02,455 [Agent] DEBUG: Collecting system...
+2026-09-16 19:06:02,455 [SystemCollector] DEBUG: Collecting system info
+2026-09-16 19:06:02,457 [SystemCollector] INFO: System: DESKTOP-1TTJ7HH (Windows 11)
+2026-09-16 19:06:02,457 [Agent] DEBUG: Collecting cpu...
+2026-09-16 19:06:02,458 [CPUCollector] DEBUG: Collecting CPU metrics
+2026-09-16 19:12:10,615 [Agent] INFO: Agent started
+2026-09-16 19:12:10,703 [CPUCollector] WARNING: LHM not available: No module named 'collectors.lhm_monitor'
+2026-09-16 19:12:10,704 [DiskCollector] DEBUG: LHM not available for disks: No module named 'collectors.lhm_monitor'
+2026-09-16 19:12:10,706 [collectors.gpu] DEBUG: GPUtil unavailable: No module named 'distutils'
+2026-09-16 19:12:11,946 [collectors.gpu] DEBUG: LHM not available for GPU: No module named 'collectors.lhm_monitor'
+2026-09-16 19:12:11,946 [collectors.gpu] INFO: GPU backend selected: nvidia_pynvml
+2026-09-16 19:12:11,946 [Agent] DEBUG: Collecting system...
+2026-09-16 19:12:11,947 [SystemCollector] DEBUG: Collecting system info
+2026-09-16 19:12:11,963 [SystemCollector] INFO: System: DESKTOP-1TTJ7HH (Windows 11)
+2026-09-16 19:12:11,963 [Agent] DEBUG: Collecting cpu...
+2026-09-16 19:12:11,963 [CPUCollector] DEBUG: Collecting CPU metrics
+2026-09-16 19:12:12,165 [CPUCollector] INFO: CPU: 18.7%, Temp: None, Power: NoneW
+2026-09-16 19:12:12,165 [Agent] DEBUG: Collecting memory...
+2026-09-16 19:12:12,165 [MemoryCollector] DEBUG: Collecting memory metrics
+2026-09-16 19:12:12,440 [MemoryCollector] INFO: RAM usage: 65.0%, Swap: 10.2%
+2026-09-16 19:12:12,440 [Agent] DEBUG: Collecting disk...
+2026-09-16 19:12:12,440 [DiskCollector] DEBUG: Collecting disk metrics
+2026-09-16 19:12:12,440 [DiskCollector] INFO: Collected 1 disk partitions
+2026-09-16 19:12:12,440 [Agent] DEBUG: Collecting network...
+2026-09-16 19:12:12,440 [NetworkCollector] DEBUG: Collecting network metrics
+2026-09-16 19:12:12,525 [NetworkCollector] INFO: Network: 2188350614 sent, 38598881183 recv
+2026-09-16 19:12:12,525 [Agent] DEBUG: Collecting devices...
+2026-09-16 19:12:12,525 [DevicesCollector] DEBUG: Collecting devices info
+2026-09-16 19:12:12,788 [DevicesCollector] INFO: Devices: 3 USB, 1 printers
+2026-09-16 19:12:13,482 [Agent] INFO: End program
+2026-09-16 19:17:12,676 [Agent] INFO: Agent started
+2026-09-16 19:17:14,133 [CPUCollector] WARNING: LHM not available: Не удалось загрузить файл или сборку "System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" либо одну из их зависимостей. Не удается найти указанный файл.
+Имя файла: 'System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'
+   в LibreHardwareMonitor.Hardware.FirmwareTable.EnumerateTables(FIRMWARE_TABLE_PROVIDER provider)
+   в LibreHardwareMonitor.Hardware.SMBios..ctor()
+   в LibreHardwareMonitor.Hardware.Computer.Open()
+
+Предупреждение: регистрация привязки сборок выключена.
+Чтобы включить регистрацию ошибок привязки сборок, установите значение параметра реестра [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) в 1.
+Примечание. Регистрация ошибок привязки сборок может привести к некоторому снижению производительности.
+Чтобы отключить эту функцию, удалите параметр реестра [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2026-09-16 19:17:14,134 [DiskCollector] DEBUG: LHM not available for disks: Не удалось загрузить файл или сборку "System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" либо одну из их зависимостей. Не удается найти указанный файл.
+Имя файла: 'System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'
+   в LibreHardwareMonitor.Hardware.FirmwareTable.EnumerateTables(FIRMWARE_TABLE_PROVIDER provider)
+   в LibreHardwareMonitor.Hardware.SMBios..ctor()
+   в LibreHardwareMonitor.Hardware.Computer.Open()
+
+Предупреждение: регистрация привязки сборок выключена.
+Чтобы включить регистрацию ошибок привязки сборок, установите значение параметра реестра [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) в 1.
+Примечание. Регистрация ошибок привязки сборок может привести к некоторому снижению производительности.
+Чтобы отключить эту функцию, удалите параметр реестра [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2026-09-16 19:17:14,137 [collectors.gpu] DEBUG: GPUtil unavailable: No module named 'distutils'
+2026-09-16 19:17:15,365 [collectors.gpu] DEBUG: LHM not available for GPU: Не удалось загрузить файл или сборку "System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" либо одну из их зависимостей. Не удается найти указанный файл.
+Имя файла: 'System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'
+   в LibreHardwareMonitor.Hardware.FirmwareTable.EnumerateTables(FIRMWARE_TABLE_PROVIDER provider)
+   в LibreHardwareMonitor.Hardware.SMBios..ctor()
+   в LibreHardwareMonitor.Hardware.Computer.Open()
+
+Предупреждение: регистрация привязки сборок выключена.
+Чтобы включить регистрацию ошибок привязки сборок, установите значение параметра реестра [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) в 1.
+Примечание. Регистрация ошибок привязки сборок может привести к некоторому снижению производительности.
+Чтобы отключить эту функцию, удалите параметр реестра [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2026-09-16 19:17:15,365 [collectors.gpu] INFO: GPU backend selected: nvidia_pynvml
+2026-09-16 19:17:15,366 [Agent] DEBUG: Collecting system...
+2026-09-16 19:17:15,366 [SystemCollector] DEBUG: Collecting system info
+2026-09-16 19:17:15,380 [SystemCollector] INFO: System: DESKTOP-1TTJ7HH (Windows 11)
+2026-09-16 19:17:15,380 [Agent] DEBUG: Collecting cpu...
+2026-09-16 19:17:15,380 [CPUCollector] DEBUG: Collecting CPU metrics
+2026-09-16 19:17:15,581 [CPUCollector] INFO: CPU: 9.6%, Temp: None, Power: NoneW
+2026-09-16 19:17:15,582 [Agent] DEBUG: Collecting memory...
+2026-09-16 19:17:15,582 [MemoryCollector] DEBUG: Collecting memory metrics
+2026-09-16 19:17:15,859 [MemoryCollector] INFO: RAM usage: 65.6%, Swap: 9.6%
+2026-09-16 19:17:15,859 [Agent] DEBUG: Collecting disk...
+2026-09-16 19:17:15,860 [DiskCollector] DEBUG: Collecting disk metrics
+2026-09-16 19:17:15,860 [DiskCollector] INFO: Collected 1 disk partitions
+2026-09-16 19:17:15,860 [Agent] DEBUG: Collecting network...
+2026-09-16 19:17:15,860 [NetworkCollector] DEBUG: Collecting network metrics
+2026-09-16 19:17:15,942 [NetworkCollector] INFO: Network: 2188728045 sent, 38599194585 recv
+2026-09-16 19:17:15,942 [Agent] DEBUG: Collecting devices...
+2026-09-16 19:17:15,942 [DevicesCollector] DEBUG: Collecting devices info
+2026-09-16 19:17:16,297 [DevicesCollector] INFO: Devices: 3 USB, 1 printers
+2026-09-16 19:17:17,001 [Agent] INFO: End program
+2026-09-16 19:19:33,588 [Agent] INFO: Agent started
+2026-09-16 19:19:34,098 [CPUCollector] WARNING: LHM not available: Не удалось загрузить файл или сборку "System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" либо одну из их зависимостей. Не удается найти указанный файл.
+Имя файла: 'System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'
+   в LibreHardwareMonitor.Hardware.FirmwareTable.EnumerateTables(FIRMWARE_TABLE_PROVIDER provider)
+   в LibreHardwareMonitor.Hardware.SMBios..ctor()
+   в LibreHardwareMonitor.Hardware.Computer.Open()
+
+Предупреждение: регистрация привязки сборок выключена.
+Чтобы включить регистрацию ошибок привязки сборок, установите значение параметра реестра [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) в 1.
+Примечание. Регистрация ошибок привязки сборок может привести к некоторому снижению производительности.
+Чтобы отключить эту функцию, удалите параметр реестра [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2026-09-16 19:19:34,099 [DiskCollector] DEBUG: LHM not available for disks: Не удалось загрузить файл или сборку "System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" либо одну из их зависимостей. Не удается найти указанный файл.
+Имя файла: 'System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'
+   в LibreHardwareMonitor.Hardware.FirmwareTable.EnumerateTables(FIRMWARE_TABLE_PROVIDER provider)
+   в LibreHardwareMonitor.Hardware.SMBios..ctor()
+   в LibreHardwareMonitor.Hardware.Computer.Open()
+
+Предупреждение: регистрация привязки сборок выключена.
+Чтобы включить регистрацию ошибок привязки сборок, установите значение параметра реестра [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) в 1.
+Примечание. Регистрация ошибок привязки сборок может привести к некоторому снижению производительности.
+Чтобы отключить эту функцию, удалите параметр реестра [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2026-09-16 19:19:34,102 [collectors.gpu] DEBUG: GPUtil unavailable: No module named 'distutils'
+2026-09-16 19:19:35,396 [collectors.gpu] DEBUG: LHM not available for GPU: Не удалось загрузить файл или сборку "System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" либо одну из их зависимостей. Не удается найти указанный файл.
+Имя файла: 'System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'
+   в LibreHardwareMonitor.Hardware.FirmwareTable.EnumerateTables(FIRMWARE_TABLE_PROVIDER provider)
+   в LibreHardwareMonitor.Hardware.SMBios..ctor()
+   в LibreHardwareMonitor.Hardware.Computer.Open()
+
+Предупреждение: регистрация привязки сборок выключена.
+Чтобы включить регистрацию ошибок привязки сборок, установите значение параметра реестра [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) в 1.
+Примечание. Регистрация ошибок привязки сборок может привести к некоторому снижению производительности.
+Чтобы отключить эту функцию, удалите параметр реестра [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2026-09-16 19:19:35,396 [collectors.gpu] INFO: GPU backend selected: nvidia_pynvml
+2026-09-16 19:19:35,396 [Agent] DEBUG: Collecting system...
+2026-09-16 19:19:35,396 [SystemCollector] DEBUG: Collecting system info
+2026-09-16 19:19:35,412 [SystemCollector] INFO: System: DESKTOP-1TTJ7HH (Windows 11)
+2026-09-16 19:19:35,413 [Agent] DEBUG: Collecting cpu...
+2026-09-16 19:19:35,413 [CPUCollector] DEBUG: Collecting CPU metrics
+2026-09-16 19:19:35,614 [CPUCollector] INFO: CPU: 25.0%, Temp: None, Power: NoneW
+2026-09-16 19:19:35,614 [Agent] DEBUG: Collecting memory...
+2026-09-16 19:19:35,614 [MemoryCollector] DEBUG: Collecting memory metrics
+2026-09-16 19:19:35,905 [MemoryCollector] INFO: RAM usage: 68.3%, Swap: 10.4%
+2026-09-16 19:19:35,905 [Agent] DEBUG: Collecting disk...
+2026-09-16 19:19:35,905 [DiskCollector] DEBUG: Collecting disk metrics
+2026-09-16 19:19:35,905 [DiskCollector] INFO: Collected 1 disk partitions
+2026-09-16 19:19:35,905 [Agent] DEBUG: Collecting network...
+2026-09-16 19:19:35,905 [NetworkCollector] DEBUG: Collecting network metrics
+2026-09-16 19:19:35,998 [NetworkCollector] INFO: Network: 2198391661 sent, 38839111905 recv
+2026-09-16 19:19:35,998 [Agent] DEBUG: Collecting devices...
+2026-09-16 19:19:35,998 [DevicesCollector] DEBUG: Collecting devices info
+2026-09-16 19:19:36,423 [DevicesCollector] INFO: Devices: 3 USB, 1 printers
+2026-09-16 19:19:37,123 [Agent] INFO: End program
+2026-09-16 19:20:06,555 [Agent] INFO: Agent started
+2026-09-16 19:20:07,002 [CPUCollector] WARNING: LHM not available: Unable to find assembly 'C:\Users\User\PycharmProjects\GraduationWork\LibreHardwareMonitorLib.dll'.
+   в Python.Runtime.CLRModule.AddReference(String name)
+2026-09-16 19:20:07,014 [DiskCollector] DEBUG: LHM not available for disks: Unable to find assembly 'C:\Users\User\PycharmProjects\GraduationWork\LibreHardwareMonitorLib.dll'.
+   в Python.Runtime.CLRModule.AddReference(String name)
+2026-09-16 19:20:07,019 [collectors.gpu] DEBUG: GPUtil unavailable: No module named 'distutils'
+2026-09-16 19:20:08,281 [collectors.gpu] DEBUG: LHM not available for GPU: Unable to find assembly 'C:\Users\User\PycharmProjects\GraduationWork\LibreHardwareMonitorLib.dll'.
+   в Python.Runtime.CLRModule.AddReference(String name)
+2026-09-16 19:20:08,281 [collectors.gpu] INFO: GPU backend selected: nvidia_pynvml
+2026-09-16 19:20:08,282 [Agent] DEBUG: Collecting system...
+2026-09-16 19:20:08,282 [SystemCollector] DEBUG: Collecting system info
+2026-09-16 19:20:08,295 [SystemCollector] INFO: System: DESKTOP-1TTJ7HH (Windows 11)
+2026-09-16 19:20:08,296 [Agent] DEBUG: Collecting cpu...
+2026-09-16 19:20:08,296 [CPUCollector] DEBUG: Collecting CPU metrics
+2026-09-16 19:20:08,497 [CPUCollector] INFO: CPU: 17.6%, Temp: None, Power: NoneW
+2026-09-16 19:20:08,497 [Agent] DEBUG: Collecting memory...
+2026-09-16 19:20:08,497 [MemoryCollector] DEBUG: Collecting memory metrics
+2026-09-16 19:20:08,793 [MemoryCollector] INFO: RAM usage: 67.2%, Swap: 10.4%
+2026-09-16 19:20:08,793 [Agent] DEBUG: Collecting disk...
+2026-09-16 19:20:08,793 [DiskCollector] DEBUG: Collecting disk metrics
+2026-09-16 19:20:08,794 [DiskCollector] INFO: Collected 1 disk partitions
+2026-09-16 19:20:08,794 [Agent] DEBUG: Collecting network...
+2026-09-16 19:20:08,794 [NetworkCollector] DEBUG: Collecting network metrics
+2026-09-16 19:20:08,890 [NetworkCollector] INFO: Network: 2198622681 sent, 38846991232 recv
+2026-09-16 19:20:08,890 [Agent] DEBUG: Collecting devices...
+2026-09-16 19:20:08,890 [DevicesCollector] DEBUG: Collecting devices info
+2026-09-16 19:20:09,308 [DevicesCollector] INFO: Devices: 3 USB, 1 printers
+2026-09-16 19:20:09,983 [Agent] INFO: End program
+2026-09-16 19:24:39,506 [Agent] INFO: Agent started
+2026-09-16 19:24:40,051 [CPUCollector] WARNING: LHM not available: Unable to find assembly 'C:\Users\User\PycharmProjects\GraduationWork\LibreHardwareMonitorLib.dll'.
+   в Python.Runtime.CLRModule.AddReference(String name)
+2026-09-16 19:24:40,055 [DiskCollector] DEBUG: LHM not available for disks: Unable to find assembly 'C:\Users\User\PycharmProjects\GraduationWork\LibreHardwareMonitorLib.dll'.
+   в Python.Runtime.CLRModule.AddReference(String name)
+2026-09-16 19:24:40,059 [collectors.gpu] DEBUG: GPUtil unavailable: No module named 'distutils'
+2026-09-16 19:24:41,298 [collectors.gpu] DEBUG: LHM not available for GPU: Unable to find assembly 'C:\Users\User\PycharmProjects\GraduationWork\LibreHardwareMonitorLib.dll'.
+   в Python.Runtime.CLRModule.AddReference(String name)
+2026-09-16 19:24:41,298 [collectors.gpu] INFO: GPU backend selected: nvidia_pynvml
+2026-09-16 19:24:41,298 [Agent] DEBUG: Collecting system...
+2026-09-16 19:24:41,298 [SystemCollector] DEBUG: Collecting system info
+2026-09-16 19:24:41,317 [SystemCollector] INFO: System: DESKTOP-1TTJ7HH (Windows 11)
+2026-09-16 19:24:41,317 [Agent] DEBUG: Collecting cpu...
+2026-09-16 19:24:41,317 [CPUCollector] DEBUG: Collecting CPU metrics
+2026-09-16 19:24:41,519 [CPUCollector] INFO: CPU: 23.2%, Temp: None, Power: NoneW
+2026-09-16 19:24:41,519 [Agent] DEBUG: Collecting memory...
+2026-09-16 19:24:41,519 [MemoryCollector] DEBUG: Collecting memory metrics
+2026-09-16 19:24:41,843 [MemoryCollector] INFO: RAM usage: 65.3%, Swap: 10.3%
+2026-09-16 19:24:41,844 [Agent] DEBUG: Collecting disk...
+2026-09-16 19:24:41,844 [DiskCollector] DEBUG: Collecting disk metrics
+2026-09-16 19:24:41,844 [DiskCollector] INFO: Collected 1 disk partitions
+2026-09-16 19:24:41,844 [Agent] DEBUG: Collecting network...
+2026-09-16 19:24:41,844 [NetworkCollector] DEBUG: Collecting network metrics
+2026-09-16 19:24:41,940 [NetworkCollector] INFO: Network: 2199906362 sent, 38882868419 recv
+2026-09-16 19:24:41,941 [Agent] DEBUG: Collecting devices...
+2026-09-16 19:24:41,941 [DevicesCollector] DEBUG: Collecting devices info
+2026-09-16 19:24:42,420 [DevicesCollector] INFO: Devices: 3 USB, 1 printers
+2026-09-16 19:24:43,139 [Agent] INFO: End program
+2026-09-16 19:27:01,220 [Agent] INFO: Agent started
+2026-09-16 19:27:01,688 [CPUCollector] WARNING: LHM not available: name 'AddReference' is not defined
+2026-09-16 19:27:01,692 [DiskCollector] DEBUG: LHM not available for disks: name 'AddReference' is not defined
+2026-09-16 19:27:01,721 [collectors.gpu] DEBUG: GPUtil unavailable: No module named 'distutils'
+2026-09-16 19:27:02,963 [collectors.gpu] DEBUG: LHM not available for GPU: name 'AddReference' is not defined
+2026-09-16 19:27:02,963 [collectors.gpu] INFO: GPU backend selected: nvidia_pynvml
+2026-09-16 19:27:02,963 [Agent] DEBUG: Collecting system...
+2026-09-16 19:27:02,963 [SystemCollector] DEBUG: Collecting system info
+2026-09-16 19:27:02,986 [SystemCollector] INFO: System: DESKTOP-1TTJ7HH (Windows 11)
+2026-09-16 19:27:02,987 [Agent] DEBUG: Collecting cpu...
+2026-09-16 19:27:02,987 [CPUCollector] DEBUG: Collecting CPU metrics
+2026-09-16 19:27:03,188 [CPUCollector] INFO: CPU: 32.5%, Temp: None, Power: NoneW
+2026-09-16 19:27:03,188 [Agent] DEBUG: Collecting memory...
+2026-09-16 19:27:03,188 [MemoryCollector] DEBUG: Collecting memory metrics
+2026-09-16 19:27:03,498 [MemoryCollector] INFO: RAM usage: 64.7%, Swap: 10.0%
+2026-09-16 19:27:03,499 [Agent] DEBUG: Collecting disk...
+2026-09-16 19:27:03,499 [DiskCollector] DEBUG: Collecting disk metrics
+2026-09-16 19:27:03,499 [DiskCollector] INFO: Collected 1 disk partitions
+2026-09-16 19:27:03,499 [Agent] DEBUG: Collecting network...
+2026-09-16 19:27:03,499 [NetworkCollector] DEBUG: Collecting network metrics
+2026-09-16 19:27:03,590 [NetworkCollector] INFO: Network: 2200636300 sent, 38896909941 recv
+2026-09-16 19:27:03,590 [Agent] DEBUG: Collecting devices...
+2026-09-16 19:27:03,590 [DevicesCollector] DEBUG: Collecting devices info
+2026-09-16 19:27:03,873 [DevicesCollector] INFO: Devices: 3 USB, 1 printers
+2026-09-16 19:27:04,559 [Agent] INFO: End program
+2026-09-16 19:27:29,622 [Agent] INFO: Agent started
+2026-09-16 19:27:30,019 [CPUCollector] WARNING: LHM not available: name 'AddReference' is not defined
+2026-09-16 19:27:30,020 [DiskCollector] DEBUG: LHM not available for disks: name 'AddReference' is not defined
+2026-09-16 19:27:30,052 [collectors.gpu] DEBUG: GPUtil unavailable: No module named 'distutils'
+2026-09-16 19:27:31,301 [collectors.gpu] DEBUG: LHM not available for GPU: name 'AddReference' is not defined
+2026-09-16 19:27:31,301 [collectors.gpu] INFO: GPU backend selected: nvidia_pynvml
+2026-09-16 19:27:31,301 [Agent] DEBUG: Collecting system...
+2026-09-16 19:27:31,301 [SystemCollector] DEBUG: Collecting system info
+2026-09-16 19:27:31,324 [SystemCollector] INFO: System: DESKTOP-1TTJ7HH (Windows 11)
+2026-09-16 19:27:31,324 [Agent] DEBUG: Collecting cpu...
+2026-09-16 19:27:31,324 [CPUCollector] DEBUG: Collecting CPU metrics
+2026-09-16 19:27:31,526 [CPUCollector] INFO: CPU: 16.7%, Temp: 0, Power: 0W
+2026-09-16 19:27:31,526 [Agent] DEBUG: Collecting memory...
+2026-09-16 19:27:31,526 [MemoryCollector] DEBUG: Collecting memory metrics
+2026-09-16 19:27:31,824 [MemoryCollector] INFO: RAM usage: 64.0%, Swap: 10.1%
+2026-09-16 19:27:31,824 [Agent] DEBUG: Collecting disk...
+2026-09-16 19:27:31,824 [DiskCollector] DEBUG: Collecting disk metrics
+2026-09-16 19:27:31,824 [DiskCollector] INFO: Collected 1 disk partitions
+2026-09-16 19:27:31,825 [Agent] DEBUG: Collecting network...
+2026-09-16 19:27:31,825 [NetworkCollector] DEBUG: Collecting network metrics
+2026-09-16 19:27:31,925 [NetworkCollector] INFO: Network: 2200779321 sent, 38901251646 recv
+2026-09-16 19:27:31,925 [Agent] DEBUG: Collecting devices...
+2026-09-16 19:27:31,925 [DevicesCollector] DEBUG: Collecting devices info
+2026-09-16 19:27:32,175 [DevicesCollector] INFO: Devices: 3 USB, 1 printers
+2026-09-16 19:27:32,891 [Agent] INFO: End program
+2026-09-16 19:36:15,831 [Agent] INFO: Agent started
+2026-09-16 19:36:15,922 [CPUCollector] WARNING: LHM not available: LibreHardwareMonitorLib.dll not found at: C:\Users\User\PycharmProjects\GraduationWork\Agent\collectors\LibreHardwareMonitorLib.dll
+Download from: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases
+2026-09-16 19:36:15,922 [DiskCollector] DEBUG: LHM not available for disks: LibreHardwareMonitorLib.dll not found at: C:\Users\User\PycharmProjects\GraduationWork\Agent\collectors\LibreHardwareMonitorLib.dll
+Download from: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases
+2026-09-16 19:36:15,925 [collectors.gpu] DEBUG: GPUtil unavailable: No module named 'distutils'
+2026-09-16 19:36:17,164 [collectors.gpu] DEBUG: LHM not available for GPU: LibreHardwareMonitorLib.dll not found at: C:\Users\User\PycharmProjects\GraduationWork\Agent\collectors\LibreHardwareMonitorLib.dll
+Download from: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases
+2026-09-16 19:36:17,164 [collectors.gpu] INFO: GPU backend selected: nvidia_pynvml
+2026-09-16 19:36:17,164 [Agent] DEBUG: Collecting system...
+2026-09-16 19:36:17,164 [SystemCollector] DEBUG: Collecting system info
+2026-09-16 19:36:17,181 [SystemCollector] INFO: System: DESKTOP-1TTJ7HH (Windows 11)
+2026-09-16 19:36:17,181 [Agent] DEBUG: Collecting cpu...
+2026-09-16 19:36:17,181 [CPUCollector] DEBUG: Collecting CPU metrics
+2026-09-16 19:36:17,382 [CPUCollector] INFO: CPU: 25.3%, Temp: 0, Power: 0W
+2026-09-16 19:36:17,382 [Agent] DEBUG: Collecting memory...
+2026-09-16 19:36:17,382 [MemoryCollector] DEBUG: Collecting memory metrics
+2026-09-16 19:36:17,643 [MemoryCollector] INFO: RAM usage: 63.5%, Swap: 10.5%
+2026-09-16 19:36:17,643 [Agent] DEBUG: Collecting disk...
+2026-09-16 19:36:17,643 [DiskCollector] DEBUG: Collecting disk metrics
+2026-09-16 19:36:17,643 [DiskCollector] INFO: Collected 1 disk partitions
+2026-09-16 19:36:17,644 [Agent] DEBUG: Collecting network...
+2026-09-16 19:36:17,644 [NetworkCollector] DEBUG: Collecting network metrics
+2026-09-16 19:36:17,731 [NetworkCollector] INFO: Network: 2209112116 sent, 39055764454 recv
+2026-09-16 19:36:17,731 [Agent] DEBUG: Collecting devices...
+2026-09-16 19:36:17,731 [DevicesCollector] DEBUG: Collecting devices info
+2026-09-16 19:36:17,993 [DevicesCollector] INFO: Devices: 3 USB, 1 printers
+2026-09-16 19:36:18,679 [Agent] INFO: End program
+2026-09-16 19:36:41,766 [Agent] INFO: Agent started
+2026-09-16 19:36:42,158 [collectors.lhm_monitor] INFO: Loaded DLL: C:\Users\User\PycharmProjects\GraduationWork\Agent\collectors\LibreHardwareMonitorLib.dll
+2026-09-16 19:36:42,194 [CPUCollector] WARNING: LHM not available: Не удалось загрузить файл или сборку "System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" либо одну из их зависимостей. Не удается найти указанный файл.
+Имя файла: 'System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'
+   в LibreHardwareMonitor.Hardware.FirmwareTable.EnumerateTables(FIRMWARE_TABLE_PROVIDER provider)
+   в LibreHardwareMonitor.Hardware.SMBios..ctor()
+   в LibreHardwareMonitor.Hardware.Computer.Open()
+
+Предупреждение: регистрация привязки сборок выключена.
+Чтобы включить регистрацию ошибок привязки сборок, установите значение параметра реестра [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) в 1.
+Примечание. Регистрация ошибок привязки сборок может привести к некоторому снижению производительности.
+Чтобы отключить эту функцию, удалите параметр реестра [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2026-09-16 19:36:42,195 [collectors.lhm_monitor] INFO: Loaded DLL: C:\Users\User\PycharmProjects\GraduationWork\Agent\collectors\LibreHardwareMonitorLib.dll
+2026-09-16 19:36:42,196 [DiskCollector] DEBUG: LHM not available for disks: Не удалось загрузить файл или сборку "System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" либо одну из их зависимостей. Не удается найти указанный файл.
+Имя файла: 'System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'
+   в LibreHardwareMonitor.Hardware.FirmwareTable.EnumerateTables(FIRMWARE_TABLE_PROVIDER provider)
+   в LibreHardwareMonitor.Hardware.SMBios..ctor()
+   в LibreHardwareMonitor.Hardware.Computer.Open()
+
+Предупреждение: регистрация привязки сборок выключена.
+Чтобы включить регистрацию ошибок привязки сборок, установите значение параметра реестра [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) в 1.
+Примечание. Регистрация ошибок привязки сборок может привести к некоторому снижению производительности.
+Чтобы отключить эту функцию, удалите параметр реестра [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2026-09-16 19:36:42,199 [collectors.gpu] DEBUG: GPUtil unavailable: No module named 'distutils'
+2026-09-16 19:36:43,426 [collectors.lhm_monitor] INFO: Loaded DLL: C:\Users\User\PycharmProjects\GraduationWork\Agent\collectors\LibreHardwareMonitorLib.dll
+2026-09-16 19:36:43,428 [collectors.gpu] DEBUG: LHM not available for GPU: Не удалось загрузить файл или сборку "System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" либо одну из их зависимостей. Не удается найти указанный файл.
+Имя файла: 'System.Memory, Version=4.0.5.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'
+   в LibreHardwareMonitor.Hardware.FirmwareTable.EnumerateTables(FIRMWARE_TABLE_PROVIDER provider)
+   в LibreHardwareMonitor.Hardware.SMBios..ctor()
+   в LibreHardwareMonitor.Hardware.Computer.Open()
+
+Предупреждение: регистрация привязки сборок выключена.
+Чтобы включить регистрацию ошибок привязки сборок, установите значение параметра реестра [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) в 1.
+Примечание. Регистрация ошибок привязки сборок может привести к некоторому снижению производительности.
+Чтобы отключить эту функцию, удалите параметр реестра [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2026-09-16 19:36:43,428 [collectors.gpu] INFO: GPU backend selected: nvidia_pynvml
+2026-09-16 19:36:43,428 [Agent] DEBUG: Collecting system...
+2026-09-16 19:36:43,428 [SystemCollector] DEBUG: Collecting system info
+2026-09-16 19:36:43,441 [SystemCollector] INFO: System: DESKTOP-1TTJ7HH (Windows 11)
+2026-09-16 19:36:43,442 [Agent] DEBUG: Collecting cpu...
+2026-09-16 19:36:43,442 [CPUCollector] DEBUG: Collecting CPU metrics
+2026-09-16 19:36:43,643 [CPUCollector] INFO: CPU: 3.7%, Temp: 0, Power: 0W
+2026-09-16 19:36:43,643 [Agent] DEBUG: Collecting memory...
+2026-09-16 19:36:43,643 [MemoryCollector] DEBUG: Collecting memory metrics
+2026-09-16 19:36:43,890 [MemoryCollector] INFO: RAM usage: 64.8%, Swap: 10.5%
+2026-09-16 19:36:43,890 [Agent] DEBUG: Collecting disk...
+2026-09-16 19:36:43,891 [DiskCollector] DEBUG: Collecting disk metrics
+2026-09-16 19:36:43,891 [DiskCollector] INFO: Collected 1 disk partitions
+2026-09-16 19:36:43,891 [Agent] DEBUG: Collecting network...
+2026-09-16 19:36:43,891 [NetworkCollector] DEBUG: Collecting network metrics
+2026-09-16 19:36:43,976 [NetworkCollector] INFO: Network: 2209285285 sent, 39056089166 recv
+2026-09-16 19:36:43,976 [Agent] DEBUG: Collecting devices...
+2026-09-16 19:36:43,976 [DevicesCollector] DEBUG: Collecting devices info
+2026-09-16 19:36:44,331 [DevicesCollector] INFO: Devices: 3 USB, 1 printers
+2026-09-16 19:36:45,016 [Agent] INFO: End program
+2026-09-16 19:40:39,889 [Agent] INFO: Agent started
+2026-09-16 19:40:40,264 [collectors.lhm_monitor] INFO: Loaded DLL: C:\Users\User\PycharmProjects\GraduationWork\Agent\collectors\LibreHardwareMonitorLib.dll
+2026-09-16 19:40:40,395 [CPUCollector] WARNING: LHM not available: Не удалось загрузить файл или сборку "System.Runtime.CompilerServices.Unsafe, Version=6.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" либо одну из их зависимостей. Не удается найти указанный файл.
+Имя файла: 'System.Runtime.CompilerServices.Unsafe, Version=6.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'
+   в System.Span`1..ctor(T[] array)
+   в LibreHardwareMonitor.Hardware.FirmwareTable.EnumerateTables(FIRMWARE_TABLE_PROVIDER provider)
+   в LibreHardwareMonitor.Hardware.SMBios..ctor()
+   в LibreHardwareMonitor.Hardware.Computer.Open()
+
+Предупреждение: регистрация привязки сборок выключена.
+Чтобы включить регистрацию ошибок привязки сборок, установите значение параметра реестра [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) в 1.
+Примечание. Регистрация ошибок привязки сборок может привести к некоторому снижению производительности.
+Чтобы отключить эту функцию, удалите параметр реестра [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2026-09-16 19:40:40,396 [collectors.lhm_monitor] INFO: Loaded DLL: C:\Users\User\PycharmProjects\GraduationWork\Agent\collectors\LibreHardwareMonitorLib.dll
+2026-09-16 19:40:40,398 [DiskCollector] DEBUG: LHM not available for disks: Не удалось загрузить файл или сборку "System.Runtime.CompilerServices.Unsafe, Version=6.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" либо одну из их зависимостей. Не удается найти указанный файл.
+Имя файла: 'System.Runtime.CompilerServices.Unsafe, Version=6.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'
+   в System.Span`1..ctor(T[] array)
+   в LibreHardwareMonitor.Hardware.FirmwareTable.EnumerateTables(FIRMWARE_TABLE_PROVIDER provider)
+   в LibreHardwareMonitor.Hardware.SMBios..ctor()
+   в LibreHardwareMonitor.Hardware.Computer.Open()
+
+Предупреждение: регистрация привязки сборок выключена.
+Чтобы включить регистрацию ошибок привязки сборок, установите значение параметра реестра [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) в 1.
+Примечание. Регистрация ошибок привязки сборок может привести к некоторому снижению производительности.
+Чтобы отключить эту функцию, удалите параметр реестра [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2026-09-16 19:40:40,401 [collectors.gpu] DEBUG: GPUtil unavailable: No module named 'distutils'
+2026-09-16 19:40:41,628 [collectors.lhm_monitor] INFO: Loaded DLL: C:\Users\User\PycharmProjects\GraduationWork\Agent\collectors\LibreHardwareMonitorLib.dll
+2026-09-16 19:40:41,630 [collectors.gpu] DEBUG: LHM not available for GPU: Не удалось загрузить файл или сборку "System.Runtime.CompilerServices.Unsafe, Version=6.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" либо одну из их зависимостей. Не удается найти указанный файл.
+Имя файла: 'System.Runtime.CompilerServices.Unsafe, Version=6.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'
+   в System.Span`1..ctor(T[] array)
+   в LibreHardwareMonitor.Hardware.FirmwareTable.EnumerateTables(FIRMWARE_TABLE_PROVIDER provider)
+   в LibreHardwareMonitor.Hardware.SMBios..ctor()
+   в LibreHardwareMonitor.Hardware.Computer.Open()
+
+Предупреждение: регистрация привязки сборок выключена.
+Чтобы включить регистрацию ошибок привязки сборок, установите значение параметра реестра [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) в 1.
+Примечание. Регистрация ошибок привязки сборок может привести к некоторому снижению производительности.
+Чтобы отключить эту функцию, удалите параметр реестра [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2026-09-16 19:40:41,630 [collectors.gpu] INFO: GPU backend selected: nvidia_pynvml
+2026-09-16 19:40:41,630 [Agent] DEBUG: Collecting system...
+2026-09-16 19:40:41,630 [SystemCollector] DEBUG: Collecting system info
+2026-09-16 19:40:41,644 [SystemCollector] INFO: System: DESKTOP-1TTJ7HH (Windows 11)
+2026-09-16 19:40:41,644 [Agent] DEBUG: Collecting cpu...
+2026-09-16 19:40:41,644 [CPUCollector] DEBUG: Collecting CPU metrics
+2026-09-16 19:40:41,846 [CPUCollector] INFO: CPU: 8.4%, Temp: 0, Power: 0W
+2026-09-16 19:40:41,846 [Agent] DEBUG: Collecting memory...
+2026-09-16 19:40:41,846 [MemoryCollector] DEBUG: Collecting memory metrics
+2026-09-16 19:40:42,128 [MemoryCollector] INFO: RAM usage: 65.2%, Swap: 10.7%
+2026-09-16 19:40:42,129 [Agent] DEBUG: Collecting disk...
+2026-09-16 19:40:42,129 [DiskCollector] DEBUG: Collecting disk metrics
+2026-09-16 19:40:42,129 [DiskCollector] INFO: Collected 1 disk partitions
+2026-09-16 19:40:42,129 [Agent] DEBUG: Collecting network...
+2026-09-16 19:40:42,129 [NetworkCollector] DEBUG: Collecting network metrics
+2026-09-16 19:40:42,211 [NetworkCollector] INFO: Network: 2210146420 sent, 39057546774 recv
+2026-09-16 19:40:42,211 [Agent] DEBUG: Collecting devices...
+2026-09-16 19:40:42,211 [DevicesCollector] DEBUG: Collecting devices info
+2026-09-16 19:40:42,626 [DevicesCollector] INFO: Devices: 3 USB, 1 printers
+2026-09-16 19:40:43,314 [Agent] INFO: End program
+2026-09-16 19:42:02,207 [Agent] INFO: Agent started
+2026-09-16 19:42:02,586 [collectors.lhm_monitor] INFO: Loaded DLL: C:\Users\User\PycharmProjects\GraduationWork\Agent\collectors\LibreHardwareMonitorLib.dll
+2026-09-16 19:42:03,145 [CPUCollector] WARNING: LHM not available: Не удалось загрузить файл или сборку "RAMSPDToolkit-NDD, Version=1.4.2.0, Culture=neutral, PublicKeyToken=null" либо одну из их зависимостей. Не удается найти указанный файл.
+Имя файла: 'RAMSPDToolkit-NDD, Version=1.4.2.0, Culture=neutral, PublicKeyToken=null'
+   в LibreHardwareMonitor.Hardware.Memory.MemoryGroup..ctor(ISettings settings)
+   в LibreHardwareMonitor.Hardware.Computer.AddGroups()
+   в LibreHardwareMonitor.Hardware.Computer.Open()
+
+Предупреждение: регистрация привязки сборок выключена.
+Чтобы включить регистрацию ошибок привязки сборок, установите значение параметра реестра [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) в 1.
+Примечание. Регистрация ошибок привязки сборок может привести к некоторому снижению производительности.
+Чтобы отключить эту функцию, удалите параметр реестра [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2026-09-16 19:42:03,146 [collectors.lhm_monitor] INFO: Loaded DLL: C:\Users\User\PycharmProjects\GraduationWork\Agent\collectors\LibreHardwareMonitorLib.dll
+2026-09-16 19:42:03,204 [DiskCollector] DEBUG: LHM not available for disks: Не удалось загрузить файл или сборку "RAMSPDToolkit-NDD, Version=1.4.2.0, Culture=neutral, PublicKeyToken=null" либо одну из их зависимостей. Не удается найти указанный файл.
+Имя файла: 'RAMSPDToolkit-NDD, Version=1.4.2.0, Culture=neutral, PublicKeyToken=null'
+   в LibreHardwareMonitor.Hardware.Memory.MemoryGroup..ctor(ISettings settings)
+   в LibreHardwareMonitor.Hardware.Computer.AddGroups()
+   в LibreHardwareMonitor.Hardware.Computer.Open()
+
+Предупреждение: регистрация привязки сборок выключена.
+Чтобы включить регистрацию ошибок привязки сборок, установите значение параметра реестра [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) в 1.
+Примечание. Регистрация ошибок привязки сборок может привести к некоторому снижению производительности.
+Чтобы отключить эту функцию, удалите параметр реестра [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2026-09-16 19:42:03,207 [collectors.gpu] DEBUG: GPUtil unavailable: No module named 'distutils'
+2026-09-16 19:42:04,440 [collectors.lhm_monitor] INFO: Loaded DLL: C:\Users\User\PycharmProjects\GraduationWork\Agent\collectors\LibreHardwareMonitorLib.dll
+2026-09-16 19:42:04,497 [collectors.gpu] DEBUG: LHM not available for GPU: Не удалось загрузить файл или сборку "RAMSPDToolkit-NDD, Version=1.4.2.0, Culture=neutral, PublicKeyToken=null" либо одну из их зависимостей. Не удается найти указанный файл.
+Имя файла: 'RAMSPDToolkit-NDD, Version=1.4.2.0, Culture=neutral, PublicKeyToken=null'
+   в LibreHardwareMonitor.Hardware.Memory.MemoryGroup..ctor(ISettings settings)
+   в LibreHardwareMonitor.Hardware.Computer.AddGroups()
+   в LibreHardwareMonitor.Hardware.Computer.Open()
+
+Предупреждение: регистрация привязки сборок выключена.
+Чтобы включить регистрацию ошибок привязки сборок, установите значение параметра реестра [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) в 1.
+Примечание. Регистрация ошибок привязки сборок может привести к некоторому снижению производительности.
+Чтобы отключить эту функцию, удалите параметр реестра [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2026-09-16 19:42:04,497 [collectors.gpu] INFO: GPU backend selected: nvidia_pynvml
+2026-09-16 19:42:04,497 [Agent] DEBUG: Collecting system...
+2026-09-16 19:42:04,497 [SystemCollector] DEBUG: Collecting system info
+2026-09-16 19:42:04,507 [SystemCollector] INFO: System: DESKTOP-1TTJ7HH (Windows 11)
+2026-09-16 19:42:04,507 [Agent] DEBUG: Collecting cpu...
+2026-09-16 19:42:04,507 [CPUCollector] DEBUG: Collecting CPU metrics
+2026-09-16 19:42:04,709 [CPUCollector] INFO: CPU: 8.3%, Temp: 0, Power: 0W
+2026-09-16 19:42:04,709 [Agent] DEBUG: Collecting memory...
+2026-09-16 19:42:04,709 [MemoryCollector] DEBUG: Collecting memory metrics
+2026-09-16 19:42:04,972 [MemoryCollector] INFO: RAM usage: 64.4%, Swap: 10.7%
+2026-09-16 19:42:04,973 [Agent] DEBUG: Collecting disk...
+2026-09-16 19:42:04,973 [DiskCollector] DEBUG: Collecting disk metrics
+2026-09-16 19:42:04,973 [DiskCollector] INFO: Collected 1 disk partitions
+2026-09-16 19:42:04,973 [Agent] DEBUG: Collecting network...
+2026-09-16 19:42:04,973 [NetworkCollector] DEBUG: Collecting network metrics
+2026-09-16 19:42:05,055 [NetworkCollector] INFO: Network: 2210185906 sent, 39057618552 recv
+2026-09-16 19:42:05,055 [Agent] DEBUG: Collecting devices...
+2026-09-16 19:42:05,055 [DevicesCollector] DEBUG: Collecting devices info
+2026-09-16 19:42:05,412 [DevicesCollector] INFO: Devices: 3 USB, 1 printers
+2026-09-16 19:42:06,111 [Agent] INFO: End program
+2026-09-16 19:42:37,712 [Agent] INFO: Agent started
+2026-09-16 19:42:38,083 [collectors.lhm_monitor] INFO: Loaded DLL: C:\Users\User\PycharmProjects\GraduationWork\Agent\collectors\LibreHardwareMonitorLib.dll
+2026-09-16 19:42:39,575 [CPUCollector] WARNING: LHM not available: Не удалось загрузить тип "System.Numerics.Vector`1" из сборки "System.Numerics.Vectors, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+   в System.SpanHelpers.IndexOf(Char& searchSpace, Char value, Int32 length)
+   в Windows.Wdk.InlineArrayIndexerExtensions.SliceAtNull(ReadOnlySpan`1 value)
+   в Windows.Wdk.__char_32.ToString()
+   в LibreHardwareMonitor.Hardware.D3DDisplayDevice.<GetNodeEngineTypeString>g__GetOtherName|3_0(<>c__DisplayClass3_0& )
+   в LibreHardwareMonitor.Hardware.D3DDisplayDevice.GetNodeEngineTypeString(D3DKMT_NODEMETADATA nodeMetaData)
+   в LibreHardwareMonitor.Hardware.D3DDisplayDevice.GetDeviceInfoByIdentifier(String deviceIdentifier, D3DDeviceInfo& deviceInfo)
+   в LibreHardwareMonitor.Hardware.Gpu.NvidiaGpu..ctor(Int32 adapterIndex, NvPhysicalGpuHandle handle, Nullable`1 displayHandle, ISettings settings)
+   в LibreHardwareMonitor.Hardware.Gpu.NvidiaGroup..ctor(ISettings settings)
+   в LibreHardwareMonitor.Hardware.Computer.AddGroups()
+   в LibreHardwareMonitor.Hardware.Computer.Open()
+2026-09-16 19:42:39,576 [collectors.lhm_monitor] INFO: Loaded DLL: C:\Users\User\PycharmProjects\GraduationWork\Agent\collectors\LibreHardwareMonitorLib.dll
+2026-09-16 19:42:39,622 [DiskCollector] DEBUG: LHM not available for disks: Не удалось загрузить тип "System.Numerics.Vector`1" из сборки "System.Numerics.Vectors, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+   в System.SpanHelpers.IndexOf(Char& searchSpace, Char value, Int32 length)
+   в Windows.Wdk.InlineArrayIndexerExtensions.SliceAtNull(ReadOnlySpan`1 value)
+   в Windows.Wdk.__char_32.ToString()
+   в LibreHardwareMonitor.Hardware.D3DDisplayDevice.<GetNodeEngineTypeString>g__GetOtherName|3_0(<>c__DisplayClass3_0& )
+   в LibreHardwareMonitor.Hardware.D3DDisplayDevice.GetNodeEngineTypeString(D3DKMT_NODEMETADATA nodeMetaData)
+   в LibreHardwareMonitor.Hardware.D3DDisplayDevice.GetDeviceInfoByIdentifier(String deviceIdentifier, D3DDeviceInfo& deviceInfo)
+   в LibreHardwareMonitor.Hardware.Gpu.NvidiaGpu..ctor(Int32 adapterIndex, NvPhysicalGpuHandle handle, Nullable`1 displayHandle, ISettings settings)
+   в LibreHardwareMonitor.Hardware.Gpu.NvidiaGroup..ctor(ISettings settings)
+   в LibreHardwareMonitor.Hardware.Computer.AddGroups()
+   в LibreHardwareMonitor.Hardware.Computer.Open()
+2026-09-16 19:42:39,625 [collectors.gpu] DEBUG: GPUtil unavailable: No module named 'distutils'
+2026-09-16 19:42:39,634 [collectors.lhm_monitor] INFO: Loaded DLL: C:\Users\User\PycharmProjects\GraduationWork\Agent\collectors\LibreHardwareMonitorLib.dll
+2026-09-16 19:42:39,685 [collectors.gpu] DEBUG: LHM not available for GPU: Не удалось загрузить тип "System.Numerics.Vector`1" из сборки "System.Numerics.Vectors, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+   в System.SpanHelpers.IndexOf(Char& searchSpace, Char value, Int32 length)
+   в Windows.Wdk.InlineArrayIndexerExtensions.SliceAtNull(ReadOnlySpan`1 value)
+   в Windows.Wdk.__char_32.ToString()
+   в LibreHardwareMonitor.Hardware.D3DDisplayDevice.<GetNodeEngineTypeString>g__GetOtherName|3_0(<>c__DisplayClass3_0& )
+   в LibreHardwareMonitor.Hardware.D3DDisplayDevice.GetNodeEngineTypeString(D3DKMT_NODEMETADATA nodeMetaData)
+   в LibreHardwareMonitor.Hardware.D3DDisplayDevice.GetDeviceInfoByIdentifier(String deviceIdentifier, D3DDeviceInfo& deviceInfo)
+   в LibreHardwareMonitor.Hardware.Gpu.NvidiaGpu..ctor(Int32 adapterIndex, NvPhysicalGpuHandle handle, Nullable`1 displayHandle, ISettings settings)
+   в LibreHardwareMonitor.Hardware.Gpu.NvidiaGroup..ctor(ISettings settings)
+   в LibreHardwareMonitor.Hardware.Computer.AddGroups()
+   в LibreHardwareMonitor.Hardware.Computer.Open()
+2026-09-16 19:42:39,685 [collectors.gpu] INFO: GPU backend selected: nvidia_pynvml
+2026-09-16 19:42:39,685 [Agent] DEBUG: Collecting system...
+2026-09-16 19:42:39,685 [SystemCollector] DEBUG: Collecting system info
+2026-09-16 19:42:39,696 [SystemCollector] INFO: System: DESKTOP-1TTJ7HH (Windows 11)
+2026-09-16 19:42:39,696 [Agent] DEBUG: Collecting cpu...
+2026-09-16 19:42:39,696 [CPUCollector] DEBUG: Collecting CPU metrics
+2026-09-16 19:42:39,898 [CPUCollector] INFO: CPU: 5.2%, Temp: 0, Power: 0W
+2026-09-16 19:42:39,898 [Agent] DEBUG: Collecting memory...
+2026-09-16 19:42:39,898 [MemoryCollector] DEBUG: Collecting memory metrics
+2026-09-16 19:42:40,166 [MemoryCollector] INFO: RAM usage: 64.4%, Swap: 10.7%
+2026-09-16 19:42:40,166 [Agent] DEBUG: Collecting disk...
+2026-09-16 19:42:40,166 [DiskCollector] DEBUG: Collecting disk metrics
+2026-09-16 19:42:40,166 [DiskCollector] INFO: Collected 1 disk partitions
+2026-09-16 19:42:40,166 [Agent] DEBUG: Collecting network...
+2026-09-16 19:42:40,166 [NetworkCollector] DEBUG: Collecting network metrics
+2026-09-16 19:42:40,247 [NetworkCollector] INFO: Network: 2210233703 sent, 39057642759 recv
+2026-09-16 19:42:40,247 [Agent] DEBUG: Collecting devices...
+2026-09-16 19:42:40,248 [DevicesCollector] DEBUG: Collecting devices info
+2026-09-16 19:42:40,636 [DevicesCollector] INFO: Devices: 3 USB, 1 printers
+2026-09-16 19:42:41,324 [Agent] INFO: End program
+2026-09-16 19:59:17,763 [Agent] INFO: Agent started
+2026-09-16 19:59:17,842 [CPUCollector] WARNING: LHM not available: LibreHardwareMonitorLib.dll not found at: C:\Users\User\PycharmProjects\GraduationWork\Agent\collectors\LibreHardwareMonitorLib.dll
+Download from: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases
+2026-09-16 19:59:17,843 [DiskCollector] DEBUG: LHM not available for disks: LibreHardwareMonitorLib.dll not found at: C:\Users\User\PycharmProjects\GraduationWork\Agent\collectors\LibreHardwareMonitorLib.dll
+Download from: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases
+2026-09-16 19:59:17,845 [collectors.gpu] DEBUG: GPUtil unavailable: No module named 'distutils'
+2026-09-16 19:59:19,105 [collectors.gpu] DEBUG: LHM not available for GPU: LibreHardwareMonitorLib.dll not found at: C:\Users\User\PycharmProjects\GraduationWork\Agent\collectors\LibreHardwareMonitorLib.dll
+Download from: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases
+2026-09-16 19:59:19,105 [collectors.gpu] INFO: GPU backend selected: nvidia_pynvml
+2026-09-16 19:59:19,105 [Agent] DEBUG: Collecting system...
+2026-09-16 19:59:19,105 [SystemCollector] DEBUG: Collecting system info
+2026-09-16 19:59:19,119 [SystemCollector] INFO: System: DESKTOP-1TTJ7HH (Windows 11)
+2026-09-16 19:59:19,119 [Agent] DEBUG: Collecting cpu...
+2026-09-16 19:59:19,119 [CPUCollector] DEBUG: Collecting CPU metrics
+2026-09-16 19:59:19,321 [CPUCollector] INFO: CPU: 11.7%, Temp: 0, Power: 0W
+2026-09-16 19:59:19,322 [Agent] DEBUG: Collecting memory...
+2026-09-16 19:59:19,322 [MemoryCollector] DEBUG: Collecting memory metrics
+2026-09-16 19:59:19,574 [MemoryCollector] INFO: RAM usage: 70.8%, Swap: 10.8%
+2026-09-16 19:59:19,574 [Agent] DEBUG: Collecting disk...
+2026-09-16 19:59:19,574 [DiskCollector] DEBUG: Collecting disk metrics
+2026-09-16 19:59:19,575 [DiskCollector] INFO: Collected 1 disk partitions
+2026-09-16 19:59:19,575 [Agent] DEBUG: Collecting network...
+2026-09-16 19:59:19,575 [NetworkCollector] DEBUG: Collecting network metrics
+2026-09-16 19:59:19,650 [NetworkCollector] INFO: Network: 2218943944 sent, 39099548056 recv
+2026-09-16 19:59:19,651 [Agent] DEBUG: Collecting devices...
+2026-09-16 19:59:19,651 [DevicesCollector] DEBUG: Collecting devices info
+2026-09-16 19:59:19,883 [DevicesCollector] INFO: Devices: 3 USB, 1 printers
+2026-09-16 19:59:20,572 [Agent] INFO: End program
+2026-09-16 20:00:30,224 [Agent] INFO: Agent started
+2026-09-16 20:00:30,263 [CPUCollector] WARNING: LHM not available: LibreHardwareMonitorLib.dll not found at: C:\Users\User\PycharmProjects\GraduationWork\Agent\collectors\dlls\LibreHardwareMonitorLib.dll
+Download from: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases
+2026-09-16 20:00:30,263 [DiskCollector] DEBUG: LHM not available for disks: LibreHardwareMonitorLib.dll not found at: C:\Users\User\PycharmProjects\GraduationWork\Agent\collectors\dlls\LibreHardwareMonitorLib.dll
+Download from: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases
+2026-09-16 20:00:30,265 [collectors.gpu] DEBUG: GPUtil unavailable: No module named 'distutils'
+2026-09-16 20:00:31,496 [collectors.gpu] DEBUG: LHM not available for GPU: LibreHardwareMonitorLib.dll not found at: C:\Users\User\PycharmProjects\GraduationWork\Agent\collectors\dlls\LibreHardwareMonitorLib.dll
+Download from: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases
+2026-09-16 20:00:31,496 [collectors.gpu] INFO: GPU backend selected: nvidia_pynvml
+2026-09-16 20:00:31,496 [Agent] DEBUG: Collecting system...
+2026-09-16 20:00:31,496 [SystemCollector] DEBUG: Collecting system info
+2026-09-16 20:00:31,511 [SystemCollector] INFO: System: DESKTOP-1TTJ7HH (Windows 11)
+2026-09-16 20:00:31,511 [Agent] DEBUG: Collecting cpu...
+2026-09-16 20:00:31,511 [CPUCollector] DEBUG: Collecting CPU metrics
+2026-09-16 20:00:31,712 [CPUCollector] INFO: CPU: 12.3%, Temp: 0, Power: 0W
+2026-09-16 20:00:31,712 [Agent] DEBUG: Collecting memory...
+2026-09-16 20:00:31,712 [MemoryCollector] DEBUG: Collecting memory metrics
+2026-09-16 20:00:31,952 [MemoryCollector] INFO: RAM usage: 72.0%, Swap: 10.8%
+2026-09-16 20:00:31,952 [Agent] DEBUG: Collecting disk...
+2026-09-16 20:00:31,952 [DiskCollector] DEBUG: Collecting disk metrics
+2026-09-16 20:00:31,953 [DiskCollector] INFO: Collected 1 disk partitions
+2026-09-16 20:00:31,953 [Agent] DEBUG: Collecting network...
+2026-09-16 20:00:31,953 [NetworkCollector] DEBUG: Collecting network metrics
+2026-09-16 20:00:32,028 [NetworkCollector] INFO: Network: 2218990715 sent, 39099622794 recv
+2026-09-16 20:00:32,029 [Agent] DEBUG: Collecting devices...
+2026-09-16 20:00:32,029 [DevicesCollector] DEBUG: Collecting devices info
+2026-09-16 20:00:32,226 [DevicesCollector] INFO: Devices: 3 USB, 1 printers
+2026-09-16 20:00:32,907 [Agent] INFO: End program
+2026-09-16 20:03:27,874 [Agent] INFO: Agent started
+2026-09-16 20:03:27,907 [CPUCollector] WARNING: LHM not available: LibreHardwareMonitorLib.dll not found at: C:\Users\User\PycharmProjects\GraduationWork\Agent\collectors\dlls\LibreHardwareMonitorLib.dll
+Download from: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases
+2026-09-16 20:03:27,907 [DiskCollector] DEBUG: LHM not available for disks: LibreHardwareMonitorLib.dll not found at: C:\Users\User\PycharmProjects\GraduationWork\Agent\collectors\dlls\LibreHardwareMonitorLib.dll
+Download from: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases
+2026-09-16 20:03:27,909 [collectors.gpu] DEBUG: GPUtil unavailable: No module named 'distutils'
+2026-09-16 20:03:29,145 [collectors.gpu] DEBUG: LHM not available for GPU: LibreHardwareMonitorLib.dll not found at: C:\Users\User\PycharmProjects\GraduationWork\Agent\collectors\dlls\LibreHardwareMonitorLib.dll
+Download from: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases
+2026-09-16 20:03:29,145 [collectors.gpu] INFO: GPU backend selected: nvidia_pynvml
+2026-09-16 20:03:29,145 [Agent] DEBUG: Collecting system...
+2026-09-16 20:03:29,145 [SystemCollector] DEBUG: Collecting system info
+2026-09-16 20:03:29,160 [SystemCollector] INFO: System: DESKTOP-1TTJ7HH (Windows 11)
+2026-09-16 20:03:29,160 [Agent] DEBUG: Collecting cpu...
+2026-09-16 20:03:29,160 [CPUCollector] DEBUG: Collecting CPU metrics
+2026-09-16 20:03:29,362 [CPUCollector] INFO: CPU: 15.0%, Temp: 0, Power: 0W
+2026-09-16 20:03:29,362 [Agent] DEBUG: Collecting memory...
+2026-09-16 20:03:29,362 [MemoryCollector] DEBUG: Collecting memory metrics
+2026-09-16 20:03:29,623 [MemoryCollector] INFO: RAM usage: 71.2%, Swap: 11.0%
+2026-09-16 20:03:29,623 [Agent] DEBUG: Collecting disk...
+2026-09-16 20:03:29,623 [DiskCollector] DEBUG: Collecting disk metrics
+2026-09-16 20:03:29,624 [DiskCollector] INFO: Collected 1 disk partitions
+2026-09-16 20:03:29,624 [Agent] DEBUG: Collecting network...
+2026-09-16 20:03:29,624 [NetworkCollector] DEBUG: Collecting network metrics
+2026-09-16 20:03:29,700 [NetworkCollector] INFO: Network: 2219341215 sent, 39100056518 recv
+2026-09-16 20:03:29,701 [Agent] DEBUG: Collecting devices...
+2026-09-16 20:03:29,701 [DevicesCollector] DEBUG: Collecting devices info
+2026-09-16 20:03:29,908 [DevicesCollector] INFO: Devices: 3 USB, 1 printers
+2026-09-16 20:03:30,589 [Agent] INFO: End program
+2026-09-16 20:06:08,353 [Agent] INFO: Agent started
+2026-09-16 20:06:08,353 [Agent] ERROR: Main loop error: CPUCollector._init_lhm() takes 1 positional argument but 2 were given
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\GraduationWork\main.py", line 55, in main
+    metrics = collect_all_metrics()
+  File "C:\Users\User\PycharmProjects\GraduationWork\main.py", line 32, in collect_all_metrics
+    'cpu': CPUCollector(),
+           ~~~~~~~~~~~~^^
+  File "C:\Users\User\PycharmProjects\GraduationWork\Agent\collectors\cpu.py", line 32, in __init__
+    self._init_lhm('dlls/LibreHardwareMonitorLib.dll')
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: CPUCollector._init_lhm() takes 1 positional argument but 2 were given
+2026-09-16 20:06:08,354 [Agent] INFO: End program
+2026-09-16 20:08:16,555 [Agent] INFO: Agent started
+2026-09-16 20:08:16,959 [CPUCollector] WARNING: LHM not available: Failed to load LibreHardwareMonitorLib.dll: Unable to find assembly 'dlls/LibreHardwareMonitorLib.dll'.
+   в Python.Runtime.CLRModule.AddReference(String name)
+Make sure .NET 6+ Runtime is installed.
+2026-09-16 20:08:16,961 [DiskCollector] DEBUG: LHM not available for disks: LibreHardwareMonitorLib.dll not found at: C:\Users\User\PycharmProjects\GraduationWork\Agent\collectors\LibreHardwareMonitorLib.dll
+Download from: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases
+2026-09-16 20:08:16,965 [collectors.gpu] DEBUG: GPUtil unavailable: No module named 'distutils'
+2026-09-16 20:08:18,200 [collectors.gpu] DEBUG: LHM not available for GPU: LibreHardwareMonitorLib.dll not found at: C:\Users\User\PycharmProjects\GraduationWork\Agent\collectors\LibreHardwareMonitorLib.dll
+Download from: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases
+2026-09-16 20:08:18,200 [collectors.gpu] INFO: GPU backend selected: nvidia_pynvml
+2026-09-16 20:08:18,200 [Agent] DEBUG: Collecting system...
+2026-09-16 20:08:18,200 [SystemCollector] DEBUG: Collecting system info
+2026-09-16 20:08:18,213 [SystemCollector] INFO: System: DESKTOP-1TTJ7HH (Windows 11)
+2026-09-16 20:08:18,213 [Agent] DEBUG: Collecting cpu...
+2026-09-16 20:08:18,213 [CPUCollector] DEBUG: Collecting CPU metrics
+2026-09-16 20:08:18,415 [CPUCollector] INFO: CPU: 10.5%, Temp: 0, Power: 0W
+2026-09-16 20:08:18,416 [Agent] DEBUG: Collecting memory...
+2026-09-16 20:08:18,416 [MemoryCollector] DEBUG: Collecting memory metrics
+2026-09-16 20:08:18,679 [MemoryCollector] INFO: RAM usage: 71.7%, Swap: 11.1%
+2026-09-16 20:08:18,679 [Agent] DEBUG: Collecting disk...
+2026-09-16 20:08:18,679 [DiskCollector] DEBUG: Collecting disk metrics
+2026-09-16 20:08:18,679 [DiskCollector] INFO: Collected 1 disk partitions
+2026-09-16 20:08:18,679 [Agent] DEBUG: Collecting network...
+2026-09-16 20:08:18,679 [NetworkCollector] DEBUG: Collecting network metrics
+2026-09-16 20:08:18,759 [NetworkCollector] INFO: Network: 2219823215 sent, 39100384808 recv
+2026-09-16 20:08:18,759 [Agent] DEBUG: Collecting devices...
+2026-09-16 20:08:18,759 [DevicesCollector] DEBUG: Collecting devices info
+2026-09-16 20:08:19,110 [DevicesCollector] INFO: Devices: 3 USB, 1 printers
+2026-09-16 20:08:19,792 [Agent] INFO: End program
+2026-09-16 20:09:31,127 [Agent] INFO: Agent started
+2026-09-16 20:09:31,477 [CPUCollector] WARNING: LHM not available: Failed to load LibreHardwareMonitorLib.dll: Unable to find assembly 'dlls/LibreHardwareMonitorLib.dll'.
+   в Python.Runtime.CLRModule.AddReference(String name)
+Make sure .NET 6+ Runtime is installed.
+2026-09-16 20:09:31,480 [DiskCollector] DEBUG: LHM not available for disks: LibreHardwareMonitorLib.dll not found at: C:\Users\User\PycharmProjects\GraduationWork\Agent\collectors\LibreHardwareMonitorLib.dll
+Download from: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases
+2026-09-16 20:09:31,484 [collectors.gpu] DEBUG: GPUtil unavailable: No module named 'distutils'
+2026-09-16 20:09:32,708 [collectors.gpu] DEBUG: LHM not available for GPU: LibreHardwareMonitorLib.dll not found at: C:\Users\User\PycharmProjects\GraduationWork\Agent\collectors\LibreHardwareMonitorLib.dll
+Download from: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases
+2026-09-16 20:09:32,708 [collectors.gpu] INFO: GPU backend selected: nvidia_pynvml
+2026-09-16 20:09:32,708 [Agent] DEBUG: Collecting system...
+2026-09-16 20:09:32,708 [SystemCollector] DEBUG: Collecting system info
+2026-09-16 20:09:32,721 [SystemCollector] INFO: System: DESKTOP-1TTJ7HH (Windows 11)
+2026-09-16 20:09:32,721 [Agent] DEBUG: Collecting cpu...
+2026-09-16 20:09:32,721 [CPUCollector] DEBUG: Collecting CPU metrics
+2026-09-16 20:09:32,924 [CPUCollector] INFO: CPU: 9.2%, Temp: 0, Power: 0W
+2026-09-16 20:09:32,924 [Agent] DEBUG: Collecting memory...
+2026-09-16 20:09:32,924 [MemoryCollector] DEBUG: Collecting memory metrics
+2026-09-16 20:09:33,178 [MemoryCollector] INFO: RAM usage: 71.8%, Swap: 11.1%
+2026-09-16 20:09:33,178 [Agent] DEBUG: Collecting disk...
+2026-09-16 20:09:33,178 [DiskCollector] DEBUG: Collecting disk metrics
+2026-09-16 20:09:33,178 [DiskCollector] INFO: Collected 1 disk partitions
+2026-09-16 20:09:33,178 [Agent] DEBUG: Collecting network...
+2026-09-16 20:09:33,178 [NetworkCollector] DEBUG: Collecting network metrics
+2026-09-16 20:09:33,262 [NetworkCollector] INFO: Network: 2219933934 sent, 39100426061 recv
+2026-09-16 20:09:33,263 [Agent] DEBUG: Collecting devices...
+2026-09-16 20:09:33,263 [DevicesCollector] DEBUG: Collecting devices info
+2026-09-16 20:09:33,627 [DevicesCollector] INFO: Devices: 3 USB, 1 printers
+2026-09-16 20:09:34,304 [Agent] INFO: End program
+2026-09-16 20:09:58,463 [Agent] INFO: Agent started
+2026-09-16 20:09:58,837 [CPUCollector] WARNING: LHM not available: Failed to load LibreHardwareMonitorLib.dll: Не удалось загрузить файл или сборку "dlls" либо одну из их зависимостей. Не удается найти указанный файл.
+Имя файла: 'dlls'
+   в System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   в System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   в System.Reflection.Assembly.Load(AssemblyName assemblyRef)
+   в Python.Runtime.AssemblyManager.LoadAssembly(AssemblyName name)
+   в Python.Runtime.CLRModule.AddReference(String name)
+
+Предупреждение: регистрация привязки сборок выключена.
+Чтобы включить регистрацию ошибок привязки сборок, установите значение параметра реестра [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) в 1.
+Примечание. Регистрация ошибок привязки сборок может привести к некоторому снижению производительности.
+Чтобы отключить эту функцию, удалите параметр реестра [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+Make sure .NET 6+ Runtime is installed.
+2026-09-16 20:09:58,839 [DiskCollector] DEBUG: LHM not available for disks: LibreHardwareMonitorLib.dll not found at: C:\Users\User\PycharmProjects\GraduationWork\Agent\collectors\LibreHardwareMonitorLib.dll
+Download from: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases
+2026-09-16 20:09:58,843 [collectors.gpu] DEBUG: GPUtil unavailable: No module named 'distutils'
+2026-09-16 20:10:00,067 [collectors.gpu] DEBUG: LHM not available for GPU: LibreHardwareMonitorLib.dll not found at: C:\Users\User\PycharmProjects\GraduationWork\Agent\collectors\LibreHardwareMonitorLib.dll
+Download from: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases
+2026-09-16 20:10:00,067 [collectors.gpu] INFO: GPU backend selected: nvidia_pynvml
+2026-09-16 20:10:00,067 [Agent] DEBUG: Collecting system...
+2026-09-16 20:10:00,067 [SystemCollector] DEBUG: Collecting system info
+2026-09-16 20:10:00,080 [SystemCollector] INFO: System: DESKTOP-1TTJ7HH (Windows 11)
+2026-09-16 20:10:00,081 [Agent] DEBUG: Collecting cpu...
+2026-09-16 20:10:00,081 [CPUCollector] DEBUG: Collecting CPU metrics
+2026-09-16 20:10:00,283 [CPUCollector] INFO: CPU: 0.0%, Temp: 0, Power: 0W
+2026-09-16 20:10:00,284 [Agent] DEBUG: Collecting memory...
+2026-09-16 20:10:00,284 [MemoryCollector] DEBUG: Collecting memory metrics
+2026-09-16 20:10:00,550 [MemoryCollector] INFO: RAM usage: 71.8%, Swap: 11.1%
+2026-09-16 20:10:00,551 [Agent] DEBUG: Collecting disk...
+2026-09-16 20:10:00,551 [DiskCollector] DEBUG: Collecting disk metrics
+2026-09-16 20:10:00,551 [DiskCollector] INFO: Collected 1 disk partitions
+2026-09-16 20:10:00,551 [Agent] DEBUG: Collecting network...
+2026-09-16 20:10:00,551 [NetworkCollector] DEBUG: Collecting network metrics
+2026-09-16 20:10:00,627 [NetworkCollector] INFO: Network: 2219973852 sent, 39100436455 recv
+2026-09-16 20:10:00,627 [Agent] DEBUG: Collecting devices...
+2026-09-16 20:10:00,627 [DevicesCollector] DEBUG: Collecting devices info
+2026-09-16 20:10:00,952 [DevicesCollector] INFO: Devices: 3 USB, 1 printers
+2026-09-16 20:10:01,644 [Agent] INFO: End program
+2026-09-16 20:16:35,916 [Agent] INFO: Agent started
+2026-09-16 20:16:36,012 [CPUCollector] WARNING: LHM not available: cannot access local variable 'dlls_dir' where it is not associated with a value
+2026-09-16 20:16:36,013 [DiskCollector] DEBUG: LHM not available for disks: cannot access local variable 'dlls_dir' where it is not associated with a value
+2026-09-16 20:16:36,015 [collectors.gpu] DEBUG: GPUtil unavailable: No module named 'distutils'
+2026-09-16 20:16:37,290 [collectors.gpu] DEBUG: LHM not available for GPU: cannot access local variable 'dlls_dir' where it is not associated with a value
+2026-09-16 20:16:37,290 [collectors.gpu] INFO: GPU backend selected: nvidia_pynvml
+2026-09-16 20:16:37,290 [Agent] DEBUG: Collecting system...
+2026-09-16 20:16:37,290 [SystemCollector] DEBUG: Collecting system info
+2026-09-16 20:16:37,308 [SystemCollector] INFO: System: DESKTOP-1TTJ7HH (Windows 11)
+2026-09-16 20:16:37,308 [Agent] DEBUG: Collecting cpu...
+2026-09-16 20:16:37,308 [CPUCollector] DEBUG: Collecting CPU metrics
+2026-09-16 20:16:37,510 [CPUCollector] INFO: CPU: 17.8%, Temp: 0, Power: 0W
+2026-09-16 20:16:37,510 [Agent] DEBUG: Collecting memory...
+2026-09-16 20:16:37,510 [MemoryCollector] DEBUG: Collecting memory metrics
+2026-09-16 20:16:37,813 [MemoryCollector] INFO: RAM usage: 71.8%, Swap: 11.2%
+2026-09-16 20:16:37,813 [Agent] DEBUG: Collecting disk...
+2026-09-16 20:16:37,813 [DiskCollector] DEBUG: Collecting disk metrics
+2026-09-16 20:16:37,814 [DiskCollector] INFO: Collected 1 disk partitions
+2026-09-16 20:16:37,814 [Agent] DEBUG: Collecting network...
+2026-09-16 20:16:37,814 [NetworkCollector] DEBUG: Collecting network metrics
+2026-09-16 20:16:37,903 [NetworkCollector] INFO: Network: 2221098107 sent, 39101180993 recv
+2026-09-16 20:16:37,903 [Agent] DEBUG: Collecting devices...
+2026-09-16 20:16:37,903 [DevicesCollector] DEBUG: Collecting devices info
+2026-09-16 20:16:38,163 [DevicesCollector] INFO: Devices: 3 USB, 1 printers
+2026-09-16 20:16:38,865 [Agent] INFO: End program
+2026-09-16 20:17:15,625 [Agent] INFO: Agent started
+2026-09-16 20:17:15,661 [collectors.lhm_monitor] INFO: Using DLLs from: C:\Users\User\PycharmProjects\GraduationWork\dlls
+2026-09-16 20:17:15,661 [collectors.lhm_monitor] DEBUG: Added to sys.path: C:\Users\User\PycharmProjects\GraduationWork\dlls
+2026-09-16 20:17:16,123 [collectors.lhm_monitor] INFO: Loaded: C:\Users\User\PycharmProjects\GraduationWork\dlls\LibreHardwareMonitorLib.dll
+2026-09-16 20:17:16,263 [CPUCollector] WARNING: LHM not available: Не удалось загрузить файл или сборку "System.Runtime.CompilerServices.Unsafe, Version=6.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" либо одну из их зависимостей. Не удается найти указанный файл.
+Имя файла: 'System.Runtime.CompilerServices.Unsafe, Version=6.0.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a'
+   в System.Span`1..ctor(T[] array)
+   в LibreHardwareMonitor.Hardware.FirmwareTable.EnumerateTables(FIRMWARE_TABLE_PROVIDER provider)
+   в LibreHardwareMonitor.Hardware.SMBios..ctor()
+   в LibreHardwareMonitor.Hardware.Computer.Open()
+
+Предупреждение: регистрация привязки сборок выключена.
+Чтобы включить регистрацию ошибок привязки сборок, установите значение параметра реестра [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) в 1.
+Примечание. Регистрация ошибок привязки сборок может привести к некоторому снижению производительности.
+Чтобы отключить эту функцию, удалите параметр реестра [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2026-09-16 20:17:16,263 [DiskCollector] DEBUG: LHM not available for disks: Directory with DLLs not found: C:\Users\User\PycharmProjects\GraduationWork\Agent\dlls
+Download LibreHardwareMonitor from: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases
+2026-09-16 20:17:16,266 [collectors.gpu] DEBUG: GPUtil unavailable: No module named 'distutils'
+2026-09-16 20:17:17,491 [collectors.gpu] DEBUG: LHM not available for GPU: Directory with DLLs not found: C:\Users\User\PycharmProjects\GraduationWork\Agent\dlls
+Download LibreHardwareMonitor from: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases
+2026-09-16 20:17:17,491 [collectors.gpu] INFO: GPU backend selected: nvidia_pynvml
+2026-09-16 20:17:17,491 [Agent] DEBUG: Collecting system...
+2026-09-16 20:17:17,491 [SystemCollector] DEBUG: Collecting system info
+2026-09-16 20:17:17,504 [SystemCollector] INFO: System: DESKTOP-1TTJ7HH (Windows 11)
+2026-09-16 20:17:17,504 [Agent] DEBUG: Collecting cpu...
+2026-09-16 20:17:17,504 [CPUCollector] DEBUG: Collecting CPU metrics
+2026-09-16 20:17:17,706 [CPUCollector] INFO: CPU: 0.0%, Temp: 0, Power: 0W
+2026-09-16 20:17:17,706 [Agent] DEBUG: Collecting memory...
+2026-09-16 20:17:17,706 [MemoryCollector] DEBUG: Collecting memory metrics
+2026-09-16 20:17:17,965 [MemoryCollector] INFO: RAM usage: 71.1%, Swap: 11.2%
+2026-09-16 20:17:17,965 [Agent] DEBUG: Collecting disk...
+2026-09-16 20:17:17,965 [DiskCollector] DEBUG: Collecting disk metrics
+2026-09-16 20:17:17,965 [DiskCollector] INFO: Collected 1 disk partitions
+2026-09-16 20:17:17,965 [Agent] DEBUG: Collecting network...
+2026-09-16 20:17:17,965 [NetworkCollector] DEBUG: Collecting network metrics
+2026-09-16 20:17:18,041 [NetworkCollector] INFO: Network: 2221166633 sent, 39101205244 recv
+2026-09-16 20:17:18,041 [Agent] DEBUG: Collecting devices...
+2026-09-16 20:17:18,041 [DevicesCollector] DEBUG: Collecting devices info
+2026-09-16 20:17:18,370 [DevicesCollector] INFO: Devices: 3 USB, 1 printers
+2026-09-16 20:17:19,057 [Agent] INFO: End program
+2026-09-16 20:18:02,825 [Agent] INFO: Agent started
+2026-09-16 20:18:02,856 [collectors.lhm_monitor] INFO: Using DLLs from: C:\Users\User\PycharmProjects\GraduationWork\dlls
+2026-09-16 20:18:02,856 [collectors.lhm_monitor] DEBUG: Added to sys.path: C:\Users\User\PycharmProjects\GraduationWork\dlls
+2026-09-16 20:18:03,181 [collectors.lhm_monitor] INFO: Loaded: C:\Users\User\PycharmProjects\GraduationWork\dlls\LibreHardwareMonitorLib.dll
+2026-09-16 20:18:03,637 [CPUCollector] WARNING: LHM not available: Не удалось загрузить файл или сборку "RAMSPDToolkit-NDD, Version=1.4.2.0, Culture=neutral, PublicKeyToken=null" либо одну из их зависимостей. Не удается найти указанный файл.
+Имя файла: 'RAMSPDToolkit-NDD, Version=1.4.2.0, Culture=neutral, PublicKeyToken=null'
+   в LibreHardwareMonitor.Hardware.Memory.MemoryGroup..ctor(ISettings settings)
+   в LibreHardwareMonitor.Hardware.Computer.AddGroups()
+   в LibreHardwareMonitor.Hardware.Computer.Open()
+
+Предупреждение: регистрация привязки сборок выключена.
+Чтобы включить регистрацию ошибок привязки сборок, установите значение параметра реестра [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) в 1.
+Примечание. Регистрация ошибок привязки сборок может привести к некоторому снижению производительности.
+Чтобы отключить эту функцию, удалите параметр реестра [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2026-09-16 20:18:03,637 [DiskCollector] DEBUG: LHM not available for disks: Directory with DLLs not found: C:\Users\User\PycharmProjects\GraduationWork\Agent\dlls
+Download LibreHardwareMonitor from: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases
+2026-09-16 20:18:03,639 [collectors.gpu] DEBUG: GPUtil unavailable: No module named 'distutils'
+2026-09-16 20:18:04,861 [collectors.gpu] DEBUG: LHM not available for GPU: Directory with DLLs not found: C:\Users\User\PycharmProjects\GraduationWork\Agent\dlls
+Download LibreHardwareMonitor from: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases
+2026-09-16 20:18:04,861 [collectors.gpu] INFO: GPU backend selected: nvidia_pynvml
+2026-09-16 20:18:04,861 [Agent] DEBUG: Collecting system...
+2026-09-16 20:18:04,862 [SystemCollector] DEBUG: Collecting system info
+2026-09-16 20:18:04,872 [SystemCollector] INFO: System: DESKTOP-1TTJ7HH (Windows 11)
+2026-09-16 20:18:04,872 [Agent] DEBUG: Collecting cpu...
+2026-09-16 20:18:04,872 [CPUCollector] DEBUG: Collecting CPU metrics
+2026-09-16 20:18:05,073 [CPUCollector] INFO: CPU: 0.0%, Temp: 0, Power: 0W
+2026-09-16 20:18:05,073 [Agent] DEBUG: Collecting memory...
+2026-09-16 20:18:05,073 [MemoryCollector] DEBUG: Collecting memory metrics
+2026-09-16 20:18:05,327 [MemoryCollector] INFO: RAM usage: 69.8%, Swap: 11.3%
+2026-09-16 20:18:05,327 [Agent] DEBUG: Collecting disk...
+2026-09-16 20:18:05,327 [DiskCollector] DEBUG: Collecting disk metrics
+2026-09-16 20:18:05,327 [DiskCollector] INFO: Collected 1 disk partitions
+2026-09-16 20:18:05,327 [Agent] DEBUG: Collecting network...
+2026-09-16 20:18:05,327 [NetworkCollector] DEBUG: Collecting network metrics
+2026-09-16 20:18:05,405 [NetworkCollector] INFO: Network: 2221217345 sent, 39101227499 recv
+2026-09-16 20:18:05,405 [Agent] DEBUG: Collecting devices...
+2026-09-16 20:18:05,405 [DevicesCollector] DEBUG: Collecting devices info
+2026-09-16 20:18:05,744 [DevicesCollector] INFO: Devices: 3 USB, 1 printers
+2026-09-16 20:18:06,454 [Agent] INFO: End program
+2026-09-16 20:18:20,577 [Agent] INFO: Agent started
+2026-09-16 20:18:20,608 [collectors.lhm_monitor] INFO: Using DLLs from: C:\Users\User\PycharmProjects\GraduationWork\dlls
+2026-09-16 20:18:20,609 [collectors.lhm_monitor] DEBUG: Added to sys.path: C:\Users\User\PycharmProjects\GraduationWork\dlls
+2026-09-16 20:18:20,931 [collectors.lhm_monitor] INFO: Loaded: C:\Users\User\PycharmProjects\GraduationWork\dlls\LibreHardwareMonitorLib.dll
+2026-09-16 20:18:22,403 [CPUCollector] WARNING: LHM not available: Не удалось загрузить тип "System.Numerics.Vector`1" из сборки "System.Numerics.Vectors, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+   в System.SpanHelpers.IndexOf(Char& searchSpace, Char value, Int32 length)
+   в Windows.Wdk.InlineArrayIndexerExtensions.SliceAtNull(ReadOnlySpan`1 value)
+   в Windows.Wdk.__char_32.ToString()
+   в LibreHardwareMonitor.Hardware.D3DDisplayDevice.<GetNodeEngineTypeString>g__GetOtherName|3_0(<>c__DisplayClass3_0& )
+   в LibreHardwareMonitor.Hardware.D3DDisplayDevice.GetNodeEngineTypeString(D3DKMT_NODEMETADATA nodeMetaData)
+   в LibreHardwareMonitor.Hardware.D3DDisplayDevice.GetDeviceInfoByIdentifier(String deviceIdentifier, D3DDeviceInfo& deviceInfo)
+   в LibreHardwareMonitor.Hardware.Gpu.NvidiaGpu..ctor(Int32 adapterIndex, NvPhysicalGpuHandle handle, Nullable`1 displayHandle, ISettings settings)
+   в LibreHardwareMonitor.Hardware.Gpu.NvidiaGroup..ctor(ISettings settings)
+   в LibreHardwareMonitor.Hardware.Computer.AddGroups()
+   в LibreHardwareMonitor.Hardware.Computer.Open()
+2026-09-16 20:18:22,403 [DiskCollector] DEBUG: LHM not available for disks: Directory with DLLs not found: C:\Users\User\PycharmProjects\GraduationWork\Agent\dlls
+Download LibreHardwareMonitor from: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases
+2026-09-16 20:18:22,405 [collectors.gpu] DEBUG: GPUtil unavailable: No module named 'distutils'
+2026-09-16 20:18:22,413 [collectors.gpu] DEBUG: LHM not available for GPU: Directory with DLLs not found: C:\Users\User\PycharmProjects\GraduationWork\Agent\dlls
+Download LibreHardwareMonitor from: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases
+2026-09-16 20:18:22,413 [collectors.gpu] INFO: GPU backend selected: nvidia_pynvml
+2026-09-16 20:18:22,413 [Agent] DEBUG: Collecting system...
+2026-09-16 20:18:22,413 [SystemCollector] DEBUG: Collecting system info
+2026-09-16 20:18:22,422 [SystemCollector] INFO: System: DESKTOP-1TTJ7HH (Windows 11)
+2026-09-16 20:18:22,422 [Agent] DEBUG: Collecting cpu...
+2026-09-16 20:18:22,422 [CPUCollector] DEBUG: Collecting CPU metrics
+2026-09-16 20:18:22,625 [CPUCollector] INFO: CPU: 1.4%, Temp: 0, Power: 0W
+2026-09-16 20:18:22,625 [Agent] DEBUG: Collecting memory...
+2026-09-16 20:18:22,625 [MemoryCollector] DEBUG: Collecting memory metrics
+2026-09-16 20:18:22,896 [MemoryCollector] INFO: RAM usage: 69.9%, Swap: 11.2%
+2026-09-16 20:18:22,896 [Agent] DEBUG: Collecting disk...
+2026-09-16 20:18:22,896 [DiskCollector] DEBUG: Collecting disk metrics
+2026-09-16 20:18:22,896 [DiskCollector] INFO: Collected 1 disk partitions
+2026-09-16 20:18:22,896 [Agent] DEBUG: Collecting network...
+2026-09-16 20:18:22,897 [NetworkCollector] DEBUG: Collecting network metrics
+2026-09-16 20:18:22,975 [NetworkCollector] INFO: Network: 2221220230 sent, 39101232727 recv
+2026-09-16 20:18:22,976 [Agent] DEBUG: Collecting devices...
+2026-09-16 20:18:22,976 [DevicesCollector] DEBUG: Collecting devices info
+2026-09-16 20:18:23,371 [DevicesCollector] INFO: Devices: 3 USB, 1 printers
+2026-09-16 20:18:24,057 [Agent] INFO: End program
+2026-09-16 20:18:52,258 [Agent] INFO: Agent started
+2026-09-16 20:18:52,289 [collectors.lhm_monitor] INFO: Using DLLs from: C:\Users\User\PycharmProjects\GraduationWork\dlls
+2026-09-16 20:18:52,289 [collectors.lhm_monitor] DEBUG: Added to sys.path: C:\Users\User\PycharmProjects\GraduationWork\dlls
+2026-09-16 20:18:52,617 [collectors.lhm_monitor] INFO: Loaded: C:\Users\User\PycharmProjects\GraduationWork\dlls\LibreHardwareMonitorLib.dll
+2026-09-16 20:18:54,323 [CPUCollector] WARNING: LHM not available: Не удалось загрузить файл или сборку "HidSharp, Version=2.6.4.0, Culture=neutral, PublicKeyToken=null" либо одну из их зависимостей. Не удается найти указанный файл.
+Имя файла: 'HidSharp, Version=2.6.4.0, Culture=neutral, PublicKeyToken=null'
+   в LibreHardwareMonitor.Hardware.Controller.AquaComputer.AquaComputerGroup..ctor(ISettings settings)
+   в LibreHardwareMonitor.Hardware.Computer.AddGroups()
+   в LibreHardwareMonitor.Hardware.Computer.Open()
+
+Предупреждение: регистрация привязки сборок выключена.
+Чтобы включить регистрацию ошибок привязки сборок, установите значение параметра реестра [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) в 1.
+Примечание. Регистрация ошибок привязки сборок может привести к некоторому снижению производительности.
+Чтобы отключить эту функцию, удалите параметр реестра [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2026-09-16 20:18:54,323 [DiskCollector] DEBUG: LHM not available for disks: Directory with DLLs not found: C:\Users\User\PycharmProjects\GraduationWork\Agent\dlls
+Download LibreHardwareMonitor from: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases
+2026-09-16 20:18:54,326 [collectors.gpu] DEBUG: GPUtil unavailable: No module named 'distutils'
+2026-09-16 20:18:54,334 [collectors.gpu] DEBUG: LHM not available for GPU: Directory with DLLs not found: C:\Users\User\PycharmProjects\GraduationWork\Agent\dlls
+Download LibreHardwareMonitor from: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases
+2026-09-16 20:18:54,334 [collectors.gpu] INFO: GPU backend selected: nvidia_pynvml
+2026-09-16 20:18:54,334 [Agent] DEBUG: Collecting system...
+2026-09-16 20:18:54,334 [SystemCollector] DEBUG: Collecting system info
+2026-09-16 20:18:54,343 [SystemCollector] INFO: System: DESKTOP-1TTJ7HH (Windows 11)
+2026-09-16 20:18:54,343 [Agent] DEBUG: Collecting cpu...
+2026-09-16 20:18:54,343 [CPUCollector] DEBUG: Collecting CPU metrics
+2026-09-16 20:18:54,544 [CPUCollector] INFO: CPU: 4.3%, Temp: 0, Power: 0W
+2026-09-16 20:18:54,544 [Agent] DEBUG: Collecting memory...
+2026-09-16 20:18:54,545 [MemoryCollector] DEBUG: Collecting memory metrics
+2026-09-16 20:18:54,867 [MemoryCollector] INFO: RAM usage: 69.7%, Swap: 11.2%
+2026-09-16 20:18:54,867 [Agent] DEBUG: Collecting disk...
+2026-09-16 20:18:54,868 [DiskCollector] DEBUG: Collecting disk metrics
+2026-09-16 20:18:54,868 [DiskCollector] INFO: Collected 1 disk partitions
+2026-09-16 20:18:54,868 [Agent] DEBUG: Collecting network...
+2026-09-16 20:18:54,868 [NetworkCollector] DEBUG: Collecting network metrics
+2026-09-16 20:18:54,961 [NetworkCollector] INFO: Network: 2221246175 sent, 39101245346 recv
+2026-09-16 20:18:54,961 [Agent] DEBUG: Collecting devices...
+2026-09-16 20:18:54,961 [DevicesCollector] DEBUG: Collecting devices info
+2026-09-16 20:18:55,314 [DevicesCollector] INFO: Devices: 3 USB, 1 printers
+2026-09-16 20:18:55,976 [Agent] INFO: End program
+2026-09-16 20:19:14,255 [Agent] INFO: Agent started
+2026-09-16 20:19:14,287 [collectors.lhm_monitor] INFO: Using DLLs from: C:\Users\User\PycharmProjects\GraduationWork\dlls
+2026-09-16 20:19:14,287 [collectors.lhm_monitor] DEBUG: Added to sys.path: C:\Users\User\PycharmProjects\GraduationWork\dlls
+2026-09-16 20:19:14,610 [collectors.lhm_monitor] INFO: Loaded: C:\Users\User\PycharmProjects\GraduationWork\dlls\LibreHardwareMonitorLib.dll
+2026-09-16 20:19:16,289 [CPUCollector] WARNING: LHM not available: Не удалось загрузить файл или сборку "DiskInfoToolkit, Version=1.1.2.0, Culture=neutral, PublicKeyToken=null" либо одну из их зависимостей. Не удается найти указанный файл.
+Имя файла: 'DiskInfoToolkit, Version=1.1.2.0, Culture=neutral, PublicKeyToken=null'
+   в LibreHardwareMonitor.Hardware.Storage.StorageGroup.AddHardware(ISettings settings)
+   в LibreHardwareMonitor.Hardware.Computer.AddGroups()
+   в LibreHardwareMonitor.Hardware.Computer.Open()
+
+Предупреждение: регистрация привязки сборок выключена.
+Чтобы включить регистрацию ошибок привязки сборок, установите значение параметра реестра [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) в 1.
+Примечание. Регистрация ошибок привязки сборок может привести к некоторому снижению производительности.
+Чтобы отключить эту функцию, удалите параметр реестра [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2026-09-16 20:19:16,290 [DiskCollector] DEBUG: LHM not available for disks: Directory with DLLs not found: C:\Users\User\PycharmProjects\GraduationWork\Agent\dlls
+Download LibreHardwareMonitor from: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases
+2026-09-16 20:19:16,292 [collectors.gpu] DEBUG: GPUtil unavailable: No module named 'distutils'
+2026-09-16 20:19:16,301 [collectors.gpu] DEBUG: LHM not available for GPU: Directory with DLLs not found: C:\Users\User\PycharmProjects\GraduationWork\Agent\dlls
+Download LibreHardwareMonitor from: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases
+2026-09-16 20:19:16,301 [collectors.gpu] INFO: GPU backend selected: nvidia_pynvml
+2026-09-16 20:19:16,301 [Agent] DEBUG: Collecting system...
+2026-09-16 20:19:16,301 [SystemCollector] DEBUG: Collecting system info
+2026-09-16 20:19:16,310 [SystemCollector] INFO: System: DESKTOP-1TTJ7HH (Windows 11)
+2026-09-16 20:19:16,310 [Agent] DEBUG: Collecting cpu...
+2026-09-16 20:19:16,310 [CPUCollector] DEBUG: Collecting CPU metrics
+2026-09-16 20:19:16,511 [CPUCollector] INFO: CPU: 5.7%, Temp: 0, Power: 0W
+2026-09-16 20:19:16,512 [Agent] DEBUG: Collecting memory...
+2026-09-16 20:19:16,512 [MemoryCollector] DEBUG: Collecting memory metrics
+2026-09-16 20:19:16,771 [MemoryCollector] INFO: RAM usage: 69.9%, Swap: 11.2%
+2026-09-16 20:19:16,771 [Agent] DEBUG: Collecting disk...
+2026-09-16 20:19:16,771 [DiskCollector] DEBUG: Collecting disk metrics
+2026-09-16 20:19:16,771 [DiskCollector] INFO: Collected 1 disk partitions
+2026-09-16 20:19:16,771 [Agent] DEBUG: Collecting network...
+2026-09-16 20:19:16,771 [NetworkCollector] DEBUG: Collecting network metrics
+2026-09-16 20:19:16,863 [NetworkCollector] INFO: Network: 2221248404 sent, 39101249258 recv
+2026-09-16 20:19:16,864 [Agent] DEBUG: Collecting devices...
+2026-09-16 20:19:16,864 [DevicesCollector] DEBUG: Collecting devices info
+2026-09-16 20:19:17,210 [DevicesCollector] INFO: Devices: 3 USB, 1 printers
+2026-09-16 20:19:17,872 [Agent] INFO: End program
+2026-09-16 20:19:47,369 [Agent] INFO: Agent started
+2026-09-16 20:19:47,400 [collectors.lhm_monitor] INFO: Using DLLs from: C:\Users\User\PycharmProjects\GraduationWork\dlls
+2026-09-16 20:19:47,400 [collectors.lhm_monitor] DEBUG: Added to sys.path: C:\Users\User\PycharmProjects\GraduationWork\dlls
+2026-09-16 20:19:47,725 [collectors.lhm_monitor] INFO: Loaded: C:\Users\User\PycharmProjects\GraduationWork\dlls\LibreHardwareMonitorLib.dll
+2026-09-16 20:19:49,330 [CPUCollector] WARNING: LHM not available: Не удалось загрузить файл или сборку "BlackSharp.Core, Version=1.0.7.0, Culture=neutral, PublicKeyToken=null" либо одну из их зависимостей. Не удается найти указанный файл.
+Имя файла: 'BlackSharp.Core, Version=1.0.7.0, Culture=neutral, PublicKeyToken=null'
+   в DiskInfoToolkit.StorageManager.ReloadStorages()
+   в LibreHardwareMonitor.Hardware.Storage.StorageGroup.AddHardware(ISettings settings)
+   в LibreHardwareMonitor.Hardware.Computer.AddGroups()
+   в LibreHardwareMonitor.Hardware.Computer.Open()
+
+Предупреждение: регистрация привязки сборок выключена.
+Чтобы включить регистрацию ошибок привязки сборок, установите значение параметра реестра [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) в 1.
+Примечание. Регистрация ошибок привязки сборок может привести к некоторому снижению производительности.
+Чтобы отключить эту функцию, удалите параметр реестра [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+2026-09-16 20:19:49,331 [DiskCollector] DEBUG: LHM not available for disks: Directory with DLLs not found: C:\Users\User\PycharmProjects\GraduationWork\Agent\dlls
+Download LibreHardwareMonitor from: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases
+2026-09-16 20:19:49,334 [collectors.gpu] DEBUG: GPUtil unavailable: No module named 'distutils'
+2026-09-16 20:19:49,344 [collectors.gpu] DEBUG: LHM not available for GPU: Directory with DLLs not found: C:\Users\User\PycharmProjects\GraduationWork\Agent\dlls
+Download LibreHardwareMonitor from: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases
+2026-09-16 20:19:49,344 [collectors.gpu] INFO: GPU backend selected: nvidia_pynvml
+2026-09-16 20:19:49,344 [Agent] DEBUG: Collecting system...
+2026-09-16 20:19:49,344 [SystemCollector] DEBUG: Collecting system info
+2026-09-16 20:19:49,356 [SystemCollector] INFO: System: DESKTOP-1TTJ7HH (Windows 11)
+2026-09-16 20:19:49,356 [Agent] DEBUG: Collecting cpu...
+2026-09-16 20:19:49,356 [CPUCollector] DEBUG: Collecting CPU metrics
+2026-09-16 20:19:50,787 [CPUCollector] INFO: CPU: 8.6%, Temp: 0, Power: 0W
+2026-09-16 20:19:50,788 [Agent] DEBUG: Collecting memory...
+2026-09-16 20:19:50,788 [MemoryCollector] DEBUG: Collecting memory metrics
+2026-09-16 20:20:13,022 [Agent] INFO: Agent started
+2026-09-16 20:20:13,054 [collectors.lhm_monitor] INFO: Using DLLs from: C:\Users\User\PycharmProjects\GraduationWork\dlls
+2026-09-16 20:20:13,054 [collectors.lhm_monitor] DEBUG: Added to sys.path: C:\Users\User\PycharmProjects\GraduationWork\dlls
+2026-09-16 20:20:13,378 [collectors.lhm_monitor] INFO: Loaded: C:\Users\User\PycharmProjects\GraduationWork\dlls\LibreHardwareMonitorLib.dll
+2026-09-16 20:20:15,057 [collectors.lhm_monitor] INFO: LHM initialized successfully
+2026-09-16 20:20:15,057 [CPUCollector] INFO: LibreHardwareMonitorLib initialized
+2026-09-16 20:20:15,057 [DiskCollector] DEBUG: LHM not available for disks: Directory with DLLs not found: C:\Users\User\PycharmProjects\GraduationWork\Agent\dlls
+Download LibreHardwareMonitor from: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases
+2026-09-16 20:20:15,060 [collectors.gpu] DEBUG: GPUtil unavailable: No module named 'distutils'
+2026-09-16 20:20:15,069 [collectors.gpu] DEBUG: LHM not available for GPU: Directory with DLLs not found: C:\Users\User\PycharmProjects\GraduationWork\Agent\dlls
+Download LibreHardwareMonitor from: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases
+2026-09-16 20:20:15,069 [collectors.gpu] INFO: GPU backend selected: nvidia_pynvml
+2026-09-16 20:20:15,069 [Agent] DEBUG: Collecting system...
+2026-09-16 20:20:15,069 [SystemCollector] DEBUG: Collecting system info
+2026-09-16 20:20:15,079 [SystemCollector] INFO: System: DESKTOP-1TTJ7HH (Windows 11)
+2026-09-16 20:20:15,079 [Agent] DEBUG: Collecting cpu...
+2026-09-16 20:20:15,080 [CPUCollector] DEBUG: Collecting CPU metrics
+2026-09-16 20:20:16,253 [CPUCollector] INFO: CPU: 7.2%, Temp: {}, Power: 0.0W
+2026-09-16 20:20:16,254 [Agent] DEBUG: Collecting memory...
+2026-09-16 20:20:16,254 [MemoryCollector] DEBUG: Collecting memory metrics
+2026-09-16 20:20:16,517 [MemoryCollector] INFO: RAM usage: 69.2%, Swap: 11.3%
+2026-09-16 20:20:16,517 [Agent] DEBUG: Collecting disk...
+2026-09-16 20:20:16,517 [DiskCollector] DEBUG: Collecting disk metrics
+2026-09-16 20:20:16,517 [DiskCollector] INFO: Collected 1 disk partitions
+2026-09-16 20:20:16,517 [Agent] DEBUG: Collecting network...
+2026-09-16 20:20:16,517 [NetworkCollector] DEBUG: Collecting network metrics
+2026-09-16 20:20:16,589 [NetworkCollector] INFO: Network: 2221329605 sent, 39101300640 recv
+2026-09-16 20:20:16,589 [Agent] DEBUG: Collecting devices...
+2026-09-16 20:20:16,589 [DevicesCollector] DEBUG: Collecting devices info
+2026-09-16 20:20:16,936 [DevicesCollector] INFO: Devices: 3 USB, 1 printers
+2026-09-16 20:20:17,605 [collectors.lhm_monitor] INFO: LHM closed
+2026-09-16 20:20:17,610 [Agent] INFO: End program
+2026-09-16 20:24:11,229 [Agent] INFO: Agent started
+2026-09-16 20:24:11,310 [collectors.lhm_monitor] INFO: Using DLLs from: C:\Users\User\PycharmProjects\GraduationWork\dlls
+2026-09-16 20:24:11,310 [collectors.lhm_monitor] DEBUG: Added to sys.path: C:\Users\User\PycharmProjects\GraduationWork\dlls
+2026-09-16 20:24:11,658 [collectors.lhm_monitor] INFO: Loaded: C:\Users\User\PycharmProjects\GraduationWork\dlls\LibreHardwareMonitorLib.dll
+2026-09-16 20:24:13,303 [collectors.lhm_monitor] INFO: LHM initialized successfully
+2026-09-16 20:24:13,304 [CPUCollector] INFO: LibreHardwareMonitorLib initialized
+2026-09-16 20:24:13,304 [collectors.lhm_monitor] INFO: Using DLLs from: C:\Users\User\PycharmProjects\GraduationWork\dlls
+2026-09-16 20:24:13,305 [collectors.lhm_monitor] INFO: Loaded: C:\Users\User\PycharmProjects\GraduationWork\dlls\LibreHardwareMonitorLib.dll
+2026-09-16 20:24:13,427 [collectors.lhm_monitor] INFO: LHM initialized successfully
+2026-09-16 20:24:13,427 [DiskCollector] INFO: LibreHardwareMonitorLib initialized for disks
+2026-09-16 20:24:13,431 [collectors.gpu] DEBUG: GPUtil unavailable: No module named 'distutils'
+2026-09-16 20:24:13,440 [collectors.lhm_monitor] INFO: Using DLLs from: C:\Users\User\PycharmProjects\GraduationWork\dlls
+2026-09-16 20:24:13,440 [collectors.lhm_monitor] INFO: Loaded: C:\Users\User\PycharmProjects\GraduationWork\dlls\LibreHardwareMonitorLib.dll
+2026-09-16 20:24:13,566 [collectors.lhm_monitor] INFO: LHM initialized successfully
+2026-09-16 20:24:13,567 [collectors.gpu] INFO: LibreHardwareMonitorLib initialized for GPU
+2026-09-16 20:24:13,567 [collectors.gpu] INFO: GPU backend selected: nvidia_pynvml
+2026-09-16 20:24:13,567 [Agent] DEBUG: Collecting system...
+2026-09-16 20:24:13,567 [SystemCollector] DEBUG: Collecting system info
+2026-09-16 20:24:13,576 [SystemCollector] INFO: System: DESKTOP-1TTJ7HH (Windows 11)
+2026-09-16 20:24:13,576 [Agent] DEBUG: Collecting cpu...
+2026-09-16 20:24:13,576 [CPUCollector] DEBUG: Collecting CPU metrics
+2026-09-16 20:24:14,032 [CPUCollector] INFO: CPU: 9.6%, Temp: {}, Power: 0.0W
+2026-09-16 20:24:14,032 [Agent] DEBUG: Collecting memory...
+2026-09-16 20:24:14,032 [MemoryCollector] DEBUG: Collecting memory metrics
+2026-09-16 20:24:14,284 [MemoryCollector] INFO: RAM usage: 69.0%, Swap: 11.4%
+2026-09-16 20:24:14,284 [Agent] DEBUG: Collecting disk...
+2026-09-16 20:24:14,284 [DiskCollector] DEBUG: Collecting disk metrics
+2026-09-16 20:24:15,025 [DiskCollector] INFO: Collected 1 disk partitions
+2026-09-16 20:24:15,025 [Agent] DEBUG: Collecting network...
+2026-09-16 20:24:15,025 [NetworkCollector] DEBUG: Collecting network metrics
+2026-09-16 20:24:15,102 [NetworkCollector] INFO: Network: 2222360086 sent, 39102027698 recv
+2026-09-16 20:24:15,102 [Agent] DEBUG: Collecting devices...
+2026-09-16 20:24:15,102 [DevicesCollector] DEBUG: Collecting devices info
+2026-09-16 20:24:15,493 [DevicesCollector] INFO: Devices: 3 USB, 1 printers
+2026-09-16 20:24:16,276 [collectors.gpu] DEBUG: Enriched 1 GPUs with LHM data
+2026-09-16 20:24:16,289 [collectors.lhm_monitor] INFO: LHM closed
+2026-09-16 20:24:16,296 [collectors.lhm_monitor] INFO: LHM closed
+2026-09-16 20:24:16,298 [collectors.lhm_monitor] INFO: LHM closed
+2026-09-16 20:24:16,301 [Agent] INFO: End program
+2026-09-16 20:25:59,129 [Agent] INFO: Agent started
+2026-09-16 20:25:59,213 [collectors.lhm_monitor] INFO: Using DLLs from: C:\Users\User\PycharmProjects\GraduationWork\dlls
+2026-09-16 20:25:59,213 [collectors.lhm_monitor] DEBUG: Added to sys.path: C:\Users\User\PycharmProjects\GraduationWork\dlls
+2026-09-16 20:25:59,628 [collectors.lhm_monitor] INFO: Loaded: C:\Users\User\PycharmProjects\GraduationWork\dlls\LibreHardwareMonitorLib.dll
+2026-09-16 20:26:01,303 [collectors.lhm_monitor] INFO: LHM initialized successfully
+2026-09-16 20:26:01,303 [CPUCollector] INFO: LibreHardwareMonitorLib initialized
+2026-09-16 20:26:01,304 [collectors.lhm_monitor] INFO: Using DLLs from: C:\Users\User\PycharmProjects\GraduationWork\dlls
+2026-09-16 20:26:01,304 [collectors.lhm_monitor] INFO: Loaded: C:\Users\User\PycharmProjects\GraduationWork\dlls\LibreHardwareMonitorLib.dll
+2026-09-16 20:26:01,453 [collectors.lhm_monitor] INFO: LHM initialized successfully
+2026-09-16 20:26:01,453 [DiskCollector] INFO: LibreHardwareMonitorLib initialized for disks
+2026-09-16 20:26:01,456 [collectors.gpu] DEBUG: GPUtil unavailable: No module named 'distutils'
+2026-09-16 20:26:01,465 [collectors.lhm_monitor] INFO: Using DLLs from: C:\Users\User\PycharmProjects\GraduationWork\dlls
+2026-09-16 20:26:01,466 [collectors.lhm_monitor] INFO: Loaded: C:\Users\User\PycharmProjects\GraduationWork\dlls\LibreHardwareMonitorLib.dll
+2026-09-16 20:26:01,597 [collectors.lhm_monitor] INFO: LHM initialized successfully
+2026-09-16 20:26:01,597 [collectors.gpu] INFO: LibreHardwareMonitorLib initialized for GPU
+2026-09-16 20:26:01,597 [collectors.gpu] INFO: GPU backend selected: nvidia_pynvml
+2026-09-16 20:26:01,597 [Agent] DEBUG: Collecting system...
+2026-09-16 20:26:01,597 [SystemCollector] DEBUG: Collecting system info
+2026-09-16 20:26:01,607 [SystemCollector] INFO: System: DESKTOP-1TTJ7HH (Windows 11)
+2026-09-16 20:26:01,607 [Agent] DEBUG: Collecting cpu...
+2026-09-16 20:26:01,607 [CPUCollector] DEBUG: Collecting CPU metrics
+2026-09-16 20:26:02,750 [CPUCollector] INFO: CPU: 3.2%, Temp: {}, Power: 0.0W
+2026-09-16 20:26:02,750 [Agent] DEBUG: Collecting memory...
+2026-09-16 20:26:02,750 [MemoryCollector] DEBUG: Collecting memory metrics
+2026-09-16 20:26:03,006 [MemoryCollector] INFO: RAM usage: 69.6%, Swap: 11.4%
+2026-09-16 20:26:03,006 [Agent] DEBUG: Collecting disk...
+2026-09-16 20:26:03,006 [DiskCollector] DEBUG: Collecting disk metrics
+2026-09-16 20:26:03,070 [DiskCollector] INFO: Collected 1 disk partitions
+2026-09-16 20:26:03,071 [Agent] DEBUG: Collecting network...
+2026-09-16 20:26:03,071 [NetworkCollector] DEBUG: Collecting network metrics
+2026-09-16 20:26:03,164 [NetworkCollector] INFO: Network: 2222434946 sent, 39102075493 recv
+2026-09-16 20:26:03,164 [Agent] DEBUG: Collecting devices...
+2026-09-16 20:26:03,164 [DevicesCollector] DEBUG: Collecting devices info
+2026-09-16 20:26:03,537 [DevicesCollector] INFO: Devices: 3 USB, 1 printers
+2026-09-16 20:26:04,290 [collectors.gpu] DEBUG: Enriched 1 GPUs with LHM data
+2026-09-16 20:26:04,302 [collectors.lhm_monitor] INFO: LHM closed
+2026-09-16 20:26:04,307 [collectors.lhm_monitor] INFO: LHM closed
+2026-09-16 20:26:04,309 [collectors.lhm_monitor] INFO: LHM closed
+2026-09-16 20:26:04,311 [Agent] INFO: End program
+2026-09-16 20:29:35,673 [Agent] INFO: Agent started
+2026-09-16 20:29:35,763 [collectors.lhm_monitor] INFO: Using DLLs from: C:\Users\User\PycharmProjects\GraduationWork\dlls
+2026-09-16 20:29:35,763 [collectors.lhm_monitor] DEBUG: Added to sys.path: C:\Users\User\PycharmProjects\GraduationWork\dlls
+2026-09-16 20:29:36,109 [collectors.lhm_monitor] INFO: Loaded: C:\Users\User\PycharmProjects\GraduationWork\dlls\LibreHardwareMonitorLib.dll
+2026-09-16 20:29:37,724 [collectors.lhm_monitor] INFO: LHM initialized successfully
+2026-09-16 20:29:37,724 [CPUCollector] INFO: LibreHardwareMonitorLib initialized
+2026-09-16 20:29:37,724 [collectors.lhm_monitor] INFO: Using DLLs from: C:\Users\User\PycharmProjects\GraduationWork\dlls
+2026-09-16 20:29:37,725 [collectors.lhm_monitor] INFO: Loaded: C:\Users\User\PycharmProjects\GraduationWork\dlls\LibreHardwareMonitorLib.dll
+2026-09-16 20:29:37,850 [collectors.lhm_monitor] INFO: LHM initialized successfully
+2026-09-16 20:29:37,850 [DiskCollector] INFO: LibreHardwareMonitorLib initialized for disks
+2026-09-16 20:29:37,854 [collectors.gpu] DEBUG: GPUtil unavailable: No module named 'distutils'
+2026-09-16 20:29:37,866 [collectors.lhm_monitor] INFO: Using DLLs from: C:\Users\User\PycharmProjects\GraduationWork\dlls
+2026-09-16 20:29:37,867 [collectors.lhm_monitor] INFO: Loaded: C:\Users\User\PycharmProjects\GraduationWork\dlls\LibreHardwareMonitorLib.dll
+2026-09-16 20:29:37,989 [collectors.lhm_monitor] INFO: LHM initialized successfully
+2026-09-16 20:29:37,989 [collectors.gpu] INFO: LibreHardwareMonitorLib initialized for GPU
+2026-09-16 20:29:37,989 [collectors.gpu] INFO: GPU backend selected: nvidia_pynvml
+2026-09-16 20:29:37,989 [Agent] DEBUG: Collecting system...
+2026-09-16 20:29:37,989 [SystemCollector] DEBUG: Collecting system info
+2026-09-16 20:29:37,997 [SystemCollector] INFO: System: DESKTOP-1TTJ7HH (Windows 11)
+2026-09-16 20:29:37,997 [Agent] DEBUG: Collecting cpu...
+2026-09-16 20:29:37,997 [CPUCollector] DEBUG: Collecting CPU metrics
+2026-09-16 20:29:38,440 [CPUCollector] INFO: CPU: 1.5%, Temp: {}, Power: 0.0W
+2026-09-16 20:29:38,440 [Agent] DEBUG: Collecting memory...
+2026-09-16 20:29:38,440 [MemoryCollector] DEBUG: Collecting memory metrics
+2026-09-16 20:29:38,700 [MemoryCollector] INFO: RAM usage: 67.7%, Swap: 11.4%
+2026-09-16 20:29:38,700 [Agent] DEBUG: Collecting disk...
+2026-09-16 20:29:38,700 [DiskCollector] DEBUG: Collecting disk metrics
+2026-09-16 20:29:39,435 [DiskCollector] INFO: Collected 1 disk partitions
+2026-09-16 20:29:39,435 [Agent] DEBUG: Collecting network...
+2026-09-16 20:29:39,435 [NetworkCollector] DEBUG: Collecting network metrics
+2026-09-16 20:29:39,514 [NetworkCollector] INFO: Network: 2223220027 sent, 39102744697 recv
+2026-09-16 20:29:39,515 [Agent] DEBUG: Collecting devices...
+2026-09-16 20:29:39,515 [DevicesCollector] DEBUG: Collecting devices info
+2026-09-16 20:29:39,881 [DevicesCollector] INFO: Devices: 3 USB, 1 printers
+2026-09-16 20:29:40,721 [collectors.gpu] DEBUG: Enriched 1 GPUs with LHM data
+2026-09-16 20:29:40,733 [collectors.lhm_monitor] INFO: LHM closed
+2026-09-16 20:29:40,740 [collectors.lhm_monitor] INFO: LHM closed
+2026-09-16 20:29:40,741 [collectors.lhm_monitor] INFO: LHM closed
+2026-09-16 20:29:40,742 [Agent] INFO: End program
+2026-09-16 20:30:36,809 [Agent] INFO: Agent started
+2026-09-16 20:30:36,862 [collectors.lhm_monitor] INFO: Using DLLs from: C:\Users\User\PycharmProjects\GraduationWork\dlls
+2026-09-16 20:30:36,862 [collectors.lhm_monitor] DEBUG: Added to sys.path: C:\Users\User\PycharmProjects\GraduationWork\dlls
+2026-09-16 20:30:37,772 [collectors.lhm_monitor] INFO: Loaded: C:\Users\User\PycharmProjects\GraduationWork\dlls\LibreHardwareMonitorLib.dll
+2026-09-16 20:30:40,617 [collectors.lhm_monitor] INFO: LHM initialized successfully
+2026-09-16 20:30:40,617 [CPUCollector] INFO: LibreHardwareMonitorLib initialized
+2026-09-16 20:30:40,618 [collectors.lhm_monitor] INFO: Using DLLs from: C:\Users\User\PycharmProjects\GraduationWork\dlls
+2026-09-16 20:30:40,618 [collectors.lhm_monitor] INFO: Loaded: C:\Users\User\PycharmProjects\GraduationWork\dlls\LibreHardwareMonitorLib.dll
+2026-09-16 20:30:41,547 [collectors.lhm_monitor] INFO: LHM initialized successfully
+2026-09-16 20:30:41,547 [DiskCollector] INFO: LibreHardwareMonitorLib initialized for disks
+2026-09-16 20:30:41,552 [collectors.gpu] DEBUG: GPUtil unavailable: No module named 'distutils'
+2026-09-16 20:30:41,570 [collectors.lhm_monitor] INFO: Using DLLs from: C:\Users\User\PycharmProjects\GraduationWork\dlls
+2026-09-16 20:30:41,571 [collectors.lhm_monitor] INFO: Loaded: C:\Users\User\PycharmProjects\GraduationWork\dlls\LibreHardwareMonitorLib.dll
+2026-09-16 20:30:42,135 [collectors.lhm_monitor] INFO: LHM initialized successfully
+2026-09-16 20:30:42,135 [collectors.gpu] INFO: LibreHardwareMonitorLib initialized for GPU
+2026-09-16 20:30:42,135 [collectors.gpu] INFO: GPU backend selected: nvidia_pynvml
+2026-09-16 20:30:42,135 [Agent] DEBUG: Collecting system...
+2026-09-16 20:30:42,135 [SystemCollector] DEBUG: Collecting system info
+2026-09-16 20:30:42,225 [SystemCollector] INFO: System: DESKTOP-1TTJ7HH (Windows 11)
+2026-09-16 20:30:42,225 [Agent] DEBUG: Collecting cpu...
+2026-09-16 20:30:42,225 [CPUCollector] DEBUG: Collecting CPU metrics
+2026-09-16 20:30:43,876 [CPUCollector] INFO: CPU: 91.7%, Temp: {}, Power: 0.0W
+2026-09-16 20:30:43,876 [Agent] DEBUG: Collecting memory...
+2026-09-16 20:30:43,876 [MemoryCollector] DEBUG: Collecting memory metrics
+2026-09-16 20:30:44,203 [MemoryCollector] INFO: RAM usage: 64.1%, Swap: 11.3%
+2026-09-16 20:30:44,204 [Agent] DEBUG: Collecting disk...
+2026-09-16 20:30:44,204 [DiskCollector] DEBUG: Collecting disk metrics
+2026-09-16 20:30:45,047 [DiskCollector] INFO: Collected 1 disk partitions
+2026-09-16 20:30:45,047 [Agent] DEBUG: Collecting network...
+2026-09-16 20:30:45,047 [NetworkCollector] DEBUG: Collecting network metrics
+2026-09-16 20:30:45,134 [NetworkCollector] INFO: Network: 2223318166 sent, 39103119994 recv
+2026-09-16 20:30:45,134 [Agent] DEBUG: Collecting devices...
+2026-09-16 20:30:45,134 [DevicesCollector] DEBUG: Collecting devices info
+2026-09-16 20:30:45,483 [DevicesCollector] INFO: Devices: 3 USB, 1 printers
+2026-09-16 20:30:45,567 [collectors.gpu] DEBUG: Enriched 1 GPUs with LHM data
+2026-09-16 20:30:45,578 [collectors.lhm_monitor] INFO: LHM closed
+2026-09-16 20:30:45,582 [collectors.lhm_monitor] INFO: LHM closed
+2026-09-16 20:30:45,584 [collectors.lhm_monitor] INFO: LHM closed
+2026-09-16 20:30:45,587 [Agent] INFO: End program
+2026-09-16 20:34:57,104 [Agent] INFO: Agent started
+2026-09-16 20:34:57,198 [collectors.lhm_monitor] INFO: Using DLLs from: C:\Users\User\PycharmProjects\GraduationWork\dlls
+2026-09-16 20:34:57,198 [collectors.lhm_monitor] DEBUG: Added to sys.path: C:\Users\User\PycharmProjects\GraduationWork\dlls
+2026-09-16 20:34:57,535 [collectors.lhm_monitor] INFO: Loaded: C:\Users\User\PycharmProjects\GraduationWork\dlls\LibreHardwareMonitorLib.dll
+2026-09-16 20:35:03,387 [collectors.lhm_monitor] INFO: LHM initialized successfully
+2026-09-16 20:35:03,388 [CPUCollector] INFO: LibreHardwareMonitorLib initialized
+2026-09-16 20:35:03,388 [collectors.lhm_monitor] INFO: Using DLLs from: C:\Users\User\PycharmProjects\GraduationWork\dlls
+2026-09-16 20:35:03,389 [collectors.lhm_monitor] INFO: Loaded: C:\Users\User\PycharmProjects\GraduationWork\dlls\LibreHardwareMonitorLib.dll
+2026-09-16 20:35:08,635 [collectors.lhm_monitor] INFO: LHM initialized successfully
+2026-09-16 20:35:08,635 [DiskCollector] INFO: LibreHardwareMonitorLib initialized for disks
+2026-09-16 20:35:08,638 [collectors.gpu] DEBUG: GPUtil unavailable: No module named 'distutils'
+2026-09-16 20:35:08,647 [collectors.lhm_monitor] INFO: Using DLLs from: C:\Users\User\PycharmProjects\GraduationWork\dlls
+2026-09-16 20:35:08,648 [collectors.lhm_monitor] INFO: Loaded: C:\Users\User\PycharmProjects\GraduationWork\dlls\LibreHardwareMonitorLib.dll
+2026-09-16 20:35:13,976 [collectors.lhm_monitor] INFO: LHM initialized successfully
+2026-09-16 20:35:13,976 [collectors.gpu] INFO: LibreHardwareMonitorLib initialized for GPU
+2026-09-16 20:35:13,977 [collectors.gpu] INFO: GPU backend selected: nvidia_pynvml
+2026-09-16 20:35:13,977 [Agent] DEBUG: Collecting system...
+2026-09-16 20:35:13,977 [SystemCollector] DEBUG: Collecting system info
+2026-09-16 20:35:13,986 [SystemCollector] INFO: System: DESKTOP-1TTJ7HH (Windows 11)
+2026-09-16 20:35:13,986 [Agent] DEBUG: Collecting cpu...
+2026-09-16 20:35:13,986 [CPUCollector] DEBUG: Collecting CPU metrics
+2026-09-16 20:35:15,564 [CPUCollector] INFO: CPU: 6.8%, Temp: {'Intel Core i7-10750H_Core Max': 71.0, 'Intel Core i7-10750H_Core Average': 65.16666412353516, 'Intel Core i7-10750H_CPU Core #1': 71.0, 'Intel Core i7-10750H_CPU Core #2': 71.0, 'Intel Core i7-10750H_CPU Core #3': 63.0, 'Intel Core i7-10750H_CPU Core #4': 63.0, 'Intel Core i7-10750H_CPU Core #5': 63.0, 'Intel Core i7-10750H_CPU Core #6': 60.0, 'Intel Core i7-10750H_CPU Package': 71.0, 'Intel Core i7-10750H_CPU Core #1 Distance to TjMax': 29.0, 'Intel Core i7-10750H_CPU Core #2 Distance to TjMax': 29.0, 'Intel Core i7-10750H_CPU Core #3 Distance to TjMax': 37.0, 'Intel Core i7-10750H_CPU Core #4 Distance to TjMax': 37.0, 'Intel Core i7-10750H_CPU Core #5 Distance to TjMax': 37.0, 'Intel Core i7-10750H_CPU Core #6 Distance to TjMax': 40.0}, Power: 23.558216094970703W
+2026-09-16 20:35:15,564 [Agent] DEBUG: Collecting memory...
+2026-09-16 20:35:15,565 [MemoryCollector] DEBUG: Collecting memory metrics
+2026-09-16 20:35:15,827 [MemoryCollector] INFO: RAM usage: 63.9%, Swap: 11.4%
+2026-09-16 20:35:15,827 [Agent] DEBUG: Collecting disk...
+2026-09-16 20:35:15,827 [DiskCollector] DEBUG: Collecting disk metrics
+2026-09-16 20:35:16,008 [DiskCollector] INFO: Collected 1 disk partitions
+2026-09-16 20:35:16,008 [Agent] DEBUG: Collecting network...
+2026-09-16 20:35:16,008 [NetworkCollector] DEBUG: Collecting network metrics
+2026-09-16 20:35:16,093 [NetworkCollector] INFO: Network: 2223714370 sent, 39103659538 recv
+2026-09-16 20:35:16,093 [Agent] DEBUG: Collecting devices...
+2026-09-16 20:35:16,093 [DevicesCollector] DEBUG: Collecting devices info
+2026-09-16 20:35:16,440 [DevicesCollector] INFO: Devices: 3 USB, 1 printers
+2026-09-16 20:35:17,090 [collectors.gpu] DEBUG: Enriched 1 GPUs with LHM data
+2026-09-16 20:35:17,105 [collectors.lhm_monitor] INFO: LHM closed
+2026-09-16 20:35:17,109 [collectors.lhm_monitor] INFO: LHM closed
+2026-09-16 20:35:17,111 [collectors.lhm_monitor] INFO: LHM closed
+2026-09-16 20:35:17,115 [Agent] INFO: End program

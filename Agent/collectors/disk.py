@@ -1,6 +1,6 @@
 import psutil
 from dataclasses import dataclass, asdict
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional
 
 from .base import BaseCollector
 
@@ -14,6 +14,8 @@ class DiskPartition:
     used_gb: float
     free_gb: float
     percent: float
+    # Новое поле:
+    temperature_c: Optional[float] = None  # Температура диска, °C
 
 
 @dataclass
@@ -32,19 +34,48 @@ class DiskInfo:
     io: Dict[str, Any]
 
     def to_dict(self) -> Dict[str, Any]:
-        return asdict(self)
+        return {k: v for k, v in asdict(self).items() if v is not None}
 
 
 class DiskCollector(BaseCollector):
+    def __init__(self):
+        super().__init__()
+        self._lhm = None
+        self._init_lhm()
+
+    def _init_lhm(self):
+        """Инициализирует LHM для температуры дисков."""
+        import platform
+        if platform.system() == "Windows":
+            try:
+                from .lhm_monitor import LHMMonitor
+                self._lhm = LHMMonitor()
+                self.logger.info("LibreHardwareMonitorLib initialized for disks")
+            except Exception as e:
+                self.logger.debug(f"LHM not available for disks: {e}")
+
     def get(self) -> Dict[str, Any]:
         self.logger.debug("Collecting disk metrics")
 
         # Разделы
         partitions = []
+        disk_temps = self._get_disk_temperatures()
+
         for part in psutil.disk_partitions(all=False):
             try:
                 usage = psutil.disk_usage(part.mountpoint)
-                partitions.append(DiskPartition(
+
+                # Пытаемся найти температуру для этого диска
+                temp = None
+                device_name = part.device.replace(":", "").replace("\\", "").strip()
+                if disk_temps:
+                    # Ищем по имени устройства
+                    for disk_name, disk_temp in disk_temps.items():
+                        if device_name.lower() in disk_name.lower() or disk_name.lower() in device_name.lower():
+                            temp = disk_temp
+                            break
+
+                partition = DiskPartition(
                     device=part.device,
                     mountpoint=part.mountpoint,
                     fstype=part.fstype,
@@ -52,15 +83,10 @@ class DiskCollector(BaseCollector):
                     used_gb=round(usage.used / (1024 ** 3), 2),
                     free_gb=round(usage.free / (1024 ** 3), 2),
                     percent=usage.percent,
-                ).to_dict() if hasattr(DiskPartition, 'to_dict') else asdict(DiskPartition(
-                    device=part.device,
-                    mountpoint=part.mountpoint,
-                    fstype=part.fstype,
-                    total_gb=round(usage.total / (1024 ** 3), 2),
-                    used_gb=round(usage.used / (1024 ** 3), 2),
-                    free_gb=round(usage.free / (1024 ** 3), 2),
-                    percent=usage.percent,
-                )))
+                    temperature_c=temp,
+                )
+                partitions.append(asdict(partition))
+
             except PermissionError:
                 self.logger.warning(f"Permission denied for {part.mountpoint}")
                 continue
@@ -79,3 +105,19 @@ class DiskCollector(BaseCollector):
         info = DiskInfo(partitions=partitions, io=io_data)
         self.logger.info(f"Collected {len(partitions)} disk partitions")
         return info.to_dict()
+
+    def _get_disk_temperatures(self) -> Optional[Dict[str, float]]:
+        """Получает температуры дисков через LHM."""
+        if not self._lhm:
+            return None
+
+        try:
+            return self._lhm.get_disk_temperatures()
+        except Exception as e:
+            self.logger.warning(f"Failed to get disk temperatures: {e}")
+            return None
+
+    def __del__(self):
+        """Освобождает ресурсы LHM."""
+        if self._lhm:
+            self._lhm.close()
