@@ -1,5 +1,7 @@
 import json
 import logging
+import time
+
 from collectors import (
     CPUCollector,
     MemoryCollector,
@@ -22,21 +24,32 @@ logging.basicConfig(
     ]
 )
 logger = logging.getLogger('Agent')
-
-def collect_all_metrics() -> dict:
-    """Собирает все метрики со всех коллекторов."""
-
-    # Инициализация коллекторов
+def init_collect() -> dict:
     collectors = {
         'system': SystemCollector(),
         'cpu': CPUCollector(),
         'memory': MemoryCollector(),
         'disk': DiskCollector(),
-        'network': NetworkCollector(max_connections=50),
+        'network': NetworkCollector(max_connections=5),
+        'devices': DevicesCollector(),
+    }
+
+    return collectors
+def collect_all_metrics(collectors, gpu_monitor) -> dict:
+    """Собирает все метрики со всех коллекторов."""
+
+    # Инициализация коллекторов
+    """
+    collectors = {
+        'system': SystemCollector(),
+        'cpu': CPUCollector(),
+        'memory': MemoryCollector(),
+        'disk': DiskCollector(),
+        'network': NetworkCollector(max_connections=5),
         'devices': DevicesCollector(),
     }
     gpu_monitor = GPUMonitor()
-
+    """
     metrics = {}
     for name, collector in collectors.items():
         logger.debug(f"Collecting {name}...")
@@ -50,19 +63,23 @@ def collect_all_metrics() -> dict:
 def main():
     logger.info("Agent started")
     #Для зацикливания работы программы.
-    #interval = 5
-    try:
-        metrics = collect_all_metrics()
+    collectors = init_collect()
+    gpu_monitor = GPUMonitor()
 
-        #print(json.dumps(metrics, indent=2, ensure_ascii=False))
-        print(json.dumps(metrics, indent=2, ensure_ascii=False))
+    while True:
+        interval = 5
+        try:
+            metrics = collect_all_metrics(collectors, gpu_monitor)
 
-        #time.sleep(interval)
-    except KeyboardInterrupt:
-        logger.info("Agent stopped by user")
-    except Exception as e:
-        logger.error(f"Main loop error: {e}", exc_info=True)
-        #time.sleep(interval)
+            #print(json.dumps(metrics, indent=2, ensure_ascii=False))
+            print(json.dumps(metrics, indent=2, ensure_ascii=False))
+
+            time.sleep(interval)
+        except KeyboardInterrupt:
+            logger.info("Agent stopped by user")
+        except Exception as e:
+            logger.error(f"Main loop error: {e}", exc_info=True)
+            time.sleep(interval)
     logger.info("End program")
 if __name__ == '__main__':
     main()
