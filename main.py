@@ -33,23 +33,10 @@ def init_collect() -> dict:
         'network': NetworkCollector(max_connections=5),
         'devices': DevicesCollector(),
     }
-
     return collectors
+
 def collect_all_metrics(collectors, gpu_monitor) -> dict:
     """Собирает все метрики со всех коллекторов."""
-
-    # Инициализация коллекторов
-    """
-    collectors = {
-        'system': SystemCollector(),
-        'cpu': CPUCollector(),
-        'memory': MemoryCollector(),
-        'disk': DiskCollector(),
-        'network': NetworkCollector(max_connections=5),
-        'devices': DevicesCollector(),
-    }
-    gpu_monitor = GPUMonitor()
-    """
     metrics = {}
     for name, collector in collectors.items():
         logger.debug(f"Collecting {name}...")

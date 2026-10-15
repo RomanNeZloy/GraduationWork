@@ -1,0 +1,26 @@
+# Сбор метрик
+psutil>=5.9.0
+GPUtil>=1.4.0
+pynvml>=11.5.0
+pyusb>=1.2.1
+screeninfo>=0.8.1
+sounddevice>=0.4.6
+
+# Windows-specific
+wmi>=1.5.1; sys_platform == 'win32'
+pythonnet>=3.0.0; sys_platform == 'win32'
+
+# Сетевое взаимодействие
+requests>=2.31.0
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+pydantic>=2.0.0
+
+# Конфигурация
+pyyaml>=6.0
+
+# Красивый вывод
+rich>=13.0.0
+
+# MQTT (опционально)
+paho-mqtt>=1.6.1

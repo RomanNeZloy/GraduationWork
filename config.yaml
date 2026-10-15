@@ -1,0 +1,46 @@
+# config.yaml — Конфигурация системы мониторинга
+
+# Настройки агента (клиента)
+agent:
+  # Как часто собирать и отправлять метрики (секунды)
+  interval: 5
+
+  # Какие коллекторы включить
+  collectors:
+    cpu: true
+    memory: true
+    disk: true
+    network: true
+    gpu: true
+    devices: true
+    system: true
+
+  # Повторные попытки при ошибке
+  retry:
+    max_attempts: 3
+    delay_seconds: 2
+
+# Настройки сервера
+server:
+  host: "0.0.0.0"
+  port: 8000
+
+  # Путь к БД
+  database: "monitoring.db"
+
+  # Хранить историю N дней
+  history_days: 30
+
+  # Считать хост оффлайн, если не было данных N секунд
+  offline_threshold: 30
+
+# Пороги для алертов
+thresholds:
+  cpu_warning: 70
+  cpu_critical: 90
+  memory_warning: 80
+  memory_critical: 95
+  disk_warning: 80
+  disk_critical: 95
+  gpu_temp_warning: 75
+  gpu_temp_critical: 85
