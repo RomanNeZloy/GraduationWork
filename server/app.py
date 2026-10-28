@@ -49,7 +49,7 @@ async def startup_event():
         raise RuntimeError("Storage or DB not initialized. Run via server_main.py")
 
     logger.info("=" * 60)
-    logger.info("🚀 Monitoring Server started")
+    logger.info("Monitoring Server started")
     logger.info("=" * 60)
 
 

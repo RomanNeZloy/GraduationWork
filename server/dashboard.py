@@ -1,5 +1,5 @@
 """
-server/dashboard.py — Красивый консольный дашборд на базе rich.
+server/dashboard.py — консольный дашборд на базе rich.
 
 Обновляется в реальном времени, показывает:
 - Статистику по кластеру (онлайн/оффлайн)
@@ -25,12 +25,7 @@ from server.storage import MetricsStorage
 
 class Dashboard:
 
-    def __init__(
-            self,
-            storage: MetricsStorage,
-            refresh_rate: float = 1.0,
-            thresholds: Optional[dict] = None
-    ):
+    def __init__(self, storage: MetricsStorage, refresh_rate: float = 1.0, thresholds: Optional[dict] = None):
         """
         Args:
             storage: Хранилище метрик
@@ -94,9 +89,9 @@ class Dashboard:
     def _render_header(self) -> Panel:
         """Заголовок дашборда."""
         title = Text()
-        title.append("🖥️  ", style="bold")
+        title.append("  ", style="bold")
         title.append("CLUSTER MONITORING DASHBOARD", style="bold cyan")
-        title.append("  🖥️", style="bold")
+        title.append("  ", style="bold")
 
         now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         subtitle = Text(f"Last update: {now}", style="dim")
@@ -129,7 +124,7 @@ class Dashboard:
         )
 
         content = Text()
-        content.append("📊 CLUSTER: ", style="bold")
+        content.append(" CLUSTER: ", style="bold")
         content.append(f"{stats['total_hosts']} hosts  ", style="white")
         content.append("│  ", style="dim")
 
@@ -145,7 +140,7 @@ class Dashboard:
         content.append(f"{stats['offline']}  ", style=offline_color)
         content.append("\n")
 
-        content.append("📈 AVERAGES: ", style="bold")
+        content.append(" AVERAGES: ", style="bold")
         content.append("CPU: ", style="dim")
         content.append(f"{stats['avg_cpu']:5.1f}%  ", style=avg_cpu_color)
         content.append("│  RAM: ", style="dim")
@@ -156,7 +151,7 @@ class Dashboard:
     def _render_hosts_table(self) -> Table:
         """Таблица со всеми хостами."""
         table = Table(
-            title="🖥️  HOSTS",
+            title="  HOSTS",
             expand=True,
             show_lines=True,
             border_style="bright_black",
@@ -312,7 +307,7 @@ class Dashboard:
     def _render_footer(self) -> Panel:
         """Подвал с подсказками."""
         text = Text()
-        text.append("💡 ", style="bold")
+        text.append(" ", style="bold")
         text.append("Legend: ", style="bold")
         text.append("🟢 Online ", style="green")
         text.append("(< 15s)  │  ", style="dim")

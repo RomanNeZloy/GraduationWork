@@ -38,9 +38,6 @@ class GPUInfo:
         return {k: v for k, v in asdict(self).items() if v is not None}
 
 
-# ─────────────────────────────────────────────
-#  Главный класс
-# ─────────────────────────────────────────────
 class GPUMonitor:
     def __init__(self):
         self._backend = self._detect_backend()
@@ -60,7 +57,7 @@ class GPUMonitor:
 
     # ── Определение бэкенда ──────────────────
     def _detect_backend(self) -> str:
-        """Последовательно пробуем библиотеки от «лучшей» к «худшей»."""
+        """Последовательно пробуем библиотеки."""
 
         # 1) NVIDIA через GPUtil
         try:
@@ -105,7 +102,6 @@ class GPUMonitor:
     def _cmd_exists(cmd: str) -> bool:
         return shutil.which(cmd) is not None
 
-    # ── Публичный метод ──────────────────────
     def get_gpus(self) -> List[GPUInfo]:
         """Возвращает список всех обнаруженных GPU с расширенными метриками."""
         dispatch = {

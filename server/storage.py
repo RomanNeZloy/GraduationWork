@@ -56,7 +56,7 @@ class MetricsStorage:
                     "metrics": {},
                     "update_count": 0,
                 }
-                logger.info(f"🆕 New host registered: {hostname}")
+                logger.info(f"New host registered: {hostname}")
 
             host_data = self._hosts[hostname]
             host_data["last_seen"] = now

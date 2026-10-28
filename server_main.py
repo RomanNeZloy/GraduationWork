@@ -13,11 +13,6 @@ import os
 # Добавляем корневую папку проекта в пути поиска Python
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-"""
-server_main.py — Точка входа сервера мониторинга.
-ИСПРАВЛЕНО: правильная передача storage между FastAPI и Dashboard.
-"""
-
 import argparse
 import logging
 import signal
@@ -41,7 +36,7 @@ _running = True
 def signal_handler(signum, frame):
     """Обработчик Ctrl+C."""
     global _running
-    print("\n⏹️  Stopping server...")
+    print("\n⏹Stopping server...")
     _running = False
     if _dashboard:
         _dashboard.stop()
@@ -105,7 +100,7 @@ def main():
     app_module.db = _db
 
     logger.info("=" * 60)
-    logger.info("🚀 Monitoring Server")
+    logger.info("    Monitoring Server")
     logger.info(f"   URL: http://{args.host}:{args.port}")
     logger.info(f"   Docs: http://{args.host}:{args.port}/docs")
     logger.info(f"   Database: {args.db}")
@@ -120,7 +115,7 @@ def main():
             thresholds=thresholds
         )
         _dashboard.start()
-        logger.info("📊 Dashboard started")
+        logger.info(" Dashboard started")
 
     # Запускаем FastAPI-сервер
     try:

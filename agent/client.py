@@ -1,11 +1,5 @@
 """
 agent/client.py — HTTP-клиент для отправки метрик на сервер.
-
-Особенности:
-- Повторные попытки при ошибке (retry)
-- Таймауты
-- Логирование
-- Обработка разных HTTP-статусов
 """
 
 import logging
@@ -30,7 +24,7 @@ class MonitoringClient:
     ):
         """
         Args:
-            server_url: URL сервера (например, http://192.168.1.100:8000)
+            server_url: URL сервера
             timeout: Таймаут запроса в секундах
             max_retries: Максимальное количество попыток
             retry_delay: Задержка между попытками в секундах
@@ -116,7 +110,6 @@ class MonitoringClient:
     def ping(self) -> bool:
         """
         Проверяет доступность сервера.
-
         Returns:
             bool: True если сервер отвечает
         """

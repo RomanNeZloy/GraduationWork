@@ -7,6 +7,7 @@ agent_main.py — Точка входа агента мониторинга.
     python agent_main.py --server http://10.0.0.1:8000  # переопределить сервер
     python agent_main.py --interval 10            # переопределить интервал
 """
+
 import sys
 import os
 
@@ -35,7 +36,7 @@ _running = True
 def signal_handler(signum, frame):
     """Обработчик сигналов Ctrl+C и SIGTERM."""
     global _running
-    print("\n⏹️  Stopping agent...")
+    print("\n Stopping agent...")
     _running = False
 
 
@@ -132,7 +133,7 @@ def main():
 
     # Инициализация
     logger.info("=" * 60)
-    logger.info("🚀 Monitoring Agent started")
+    logger.info("Monitoring Agent started")
     logger.info(f"   Server: {server_url}")
     logger.info(f"   Interval: {interval}s")
     logger.info("=" * 60)
@@ -147,9 +148,9 @@ def main():
 
     # Проверка связи с сервером
     if client.ping():
-        logger.info("✅ Server is reachable")
+        logger.info("Server is reachable")
     else:
-        logger.warning("⚠️  Server is not reachable (will retry)")
+        logger.warning("Server is not reachable (will retry)")
 
     # Главный цикл
     cycle = 0
